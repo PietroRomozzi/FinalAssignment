@@ -1,0 +1,1246 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>I.Stat</Author>
+  <LastAuthor>Pietro Romozzi</LastAuthor>
+  <Created>2014-11-20T18:21:29Z</Created>
+  <LastSaved>2014-11-20T18:08:48Z</LastSaved>
+  <Company>Istat</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>13020</WindowHeight>
+  <WindowWidth>17440</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>140</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s89">
+   <NumberFormat/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="main">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="108" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="12">
+   <Column ss:AutoFitWidth="0" ss:Width="192"/>
+   <Column ss:StyleID="s89" ss:AutoFitWidth="0" ss:Width="156"/>
+   <Column ss:AutoFitWidth="0" ss:Width="106" ss:Span="5"/>
+   <Row>
+    <Cell><Data ss:Type="String">county</Data></Cell>
+    <Cell><Data ss:Type="String">unemployment_rate</Data></Cell>
+    <Cell><Data ss:Type="String">avg_temperature</Data></Cell>
+    <Cell><Data ss:Type="String">suicides</Data></Cell>
+    <Cell><Data ss:Type="String">population</Data></Cell>
+    <Cell><Data ss:Type="String">gini_index</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">region</Data></Cell>
+    <Cell><Data ss:Type="String">avg_temperature</Data></Cell>
+    <Cell><Data ss:Type="String">tot_precipitations</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Torino</Data></Cell>
+    <Cell><Data ss:Type="Number">8.3233540000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">214</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Piemonte</Data></Cell>
+    <Cell><Data ss:Type="Number">9.5500000000000007</Data></Cell>
+    <Cell><Data ss:Type="Number">926.1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vercelli</Data></Cell>
+    <Cell><Data ss:Type="Number">5.1995120000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Valle d'Aosta</Data></Cell>
+    <Cell><Data ss:Type="Number">1.8</Data></Cell>
+    <Cell><Data ss:Type="Number">774.3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Novara</Data></Cell>
+    <Cell><Data ss:Type="Number">7.5779990000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Lombardia</Data></Cell>
+    <Cell><Data ss:Type="Number">9.9499999999999993</Data></Cell>
+    <Cell><Data ss:Type="Number">808.4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuneo</Data></Cell>
+    <Cell><Data ss:Type="Number">2.8928389999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Trentino Alto-Adige</Data></Cell>
+    <Cell><Data ss:Type="Number">5.95</Data></Cell>
+    <Cell><Data ss:Type="Number">868.3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Asti</Data></Cell>
+    <Cell><Data ss:Type="Number">5.8147089999999997</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Veneto</Data></Cell>
+    <Cell><Data ss:Type="Number">11.95</Data></Cell>
+    <Cell><Data ss:Type="Number">904.3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Alessandria</Data></Cell>
+    <Cell><Data ss:Type="Number">5.8101770000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Friuli-Venezia Giulia</Data></Cell>
+    <Cell><Data ss:Type="Number">11.35</Data></Cell>
+    <Cell><Data ss:Type="Number">1116</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Biella</Data></Cell>
+    <Cell><Data ss:Type="Number">6.6974489999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Liguria</Data></Cell>
+    <Cell><Data ss:Type="Number">13.75</Data></Cell>
+    <Cell><Data ss:Type="Number">969.8</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Verbano-Cusio-Ossola</Data></Cell>
+    <Cell><Data ss:Type="Number">5.110589</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.30599999999999999</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Emilia-Romagna</Data></Cell>
+    <Cell><Data ss:Type="Number">12.75</Data></Cell>
+    <Cell><Data ss:Type="Number">801.8</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Valle d'Aosta / Vallée d'Aoste</Data></Cell>
+    <Cell><Data ss:Type="Number">4.4180450000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27600000000000002</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Toscana</Data></Cell>
+    <Cell><Data ss:Type="Number">13.65</Data></Cell>
+    <Cell><Data ss:Type="Number">833.1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Imperia</Data></Cell>
+    <Cell><Data ss:Type="Number">6.760637</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Umbria</Data></Cell>
+    <Cell><Data ss:Type="Number">12.4</Data></Cell>
+    <Cell><Data ss:Type="Number">867.5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Savona</Data></Cell>
+    <Cell><Data ss:Type="Number">4.9144730000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Marche</Data></Cell>
+    <Cell><Data ss:Type="Number">13.45</Data></Cell>
+    <Cell><Data ss:Type="Number">839</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Genova</Data></Cell>
+    <Cell><Data ss:Type="Number">5.5027929999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Lazio</Data></Cell>
+    <Cell><Data ss:Type="Number">13.9</Data></Cell>
+    <Cell><Data ss:Type="Number">958.2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">La Spezia</Data></Cell>
+    <Cell><Data ss:Type="Number">6.5655109999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Abruzzo</Data></Cell>
+    <Cell><Data ss:Type="Number">11.95</Data></Cell>
+    <Cell><Data ss:Type="Number">1001.7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Varese</Data></Cell>
+    <Cell><Data ss:Type="Number">6.3255229999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Molise</Data></Cell>
+    <Cell><Data ss:Type="Number">14.2</Data></Cell>
+    <Cell><Data ss:Type="Number">1066.9000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Como</Data></Cell>
+    <Cell><Data ss:Type="Number">5.7189880000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Campania</Data></Cell>
+    <Cell><Data ss:Type="Number">14.95</Data></Cell>
+    <Cell><Data ss:Type="Number">1040.7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sondrio</Data></Cell>
+    <Cell><Data ss:Type="Number">4.4358940000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Puglia</Data></Cell>
+    <Cell><Data ss:Type="Number">15.9</Data></Cell>
+    <Cell><Data ss:Type="Number">812.1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Milano</Data></Cell>
+    <Cell><Data ss:Type="Number">5.7020479999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Basilicata</Data></Cell>
+    <Cell><Data ss:Type="Number">14.75</Data></Cell>
+    <Cell><Data ss:Type="Number">865.1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bergamo</Data></Cell>
+    <Cell><Data ss:Type="Number">3.6981290000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Calabria</Data></Cell>
+    <Cell><Data ss:Type="Number">16.850000000000001</Data></Cell>
+    <Cell><Data ss:Type="Number">988.9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Brescia</Data></Cell>
+    <Cell><Data ss:Type="Number">5.2754560000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Sicilia</Data></Cell>
+    <Cell><Data ss:Type="Number">18.149999999999999</Data></Cell>
+    <Cell><Data ss:Type="Number">836</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pavia</Data></Cell>
+    <Cell><Data ss:Type="Number">5.50427</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">Sardegna</Data></Cell>
+    <Cell><Data ss:Type="Number">17.45</Data></Cell>
+    <Cell><Data ss:Type="Number">470.4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cremona</Data></Cell>
+    <Cell><Data ss:Type="Number">5.4998719999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mantova</Data></Cell>
+    <Cell><Data ss:Type="Number">4.7550169999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lecco</Data></Cell>
+    <Cell><Data ss:Type="Number">4.5371709999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lodi</Data></Cell>
+    <Cell><Data ss:Type="Number">5.4174519999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29199999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Provincia Autonoma Bolzano / Bozen</Data></Cell>
+    <Cell><Data ss:Type="Number">2.857119</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27200000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Provincia Autonoma Trento</Data></Cell>
+    <Cell><Data ss:Type="Number">3.510596</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27200000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Verona</Data></Cell>
+    <Cell><Data ss:Type="Number">4.674156</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vicenza</Data></Cell>
+    <Cell><Data ss:Type="Number">5.0198590000000003</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Belluno</Data></Cell>
+    <Cell><Data ss:Type="Number">4.4330939999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Treviso</Data></Cell>
+    <Cell><Data ss:Type="Number">4.7300240000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Venezia</Data></Cell>
+    <Cell><Data ss:Type="Number">5.6426319999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Padova</Data></Cell>
+    <Cell><Data ss:Type="Number">4.331474</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rovigo</Data></Cell>
+    <Cell><Data ss:Type="Number">3.1976849999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Udine</Data></Cell>
+    <Cell><Data ss:Type="Number">5.6207849999999997</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Gorizia</Data></Cell>
+    <Cell><Data ss:Type="Number">5.7351559999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trieste</Data></Cell>
+    <Cell><Data ss:Type="Number">4.6711109999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pordenone</Data></Cell>
+    <Cell><Data ss:Type="Number">4.9186059999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27700000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Piacenza</Data></Cell>
+    <Cell><Data ss:Type="Number">2.1277089999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Parma</Data></Cell>
+    <Cell><Data ss:Type="Number">3.7678609999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Reggio nell'Emilia</Data></Cell>
+    <Cell><Data ss:Type="Number">4.9958739999999997</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Modena</Data></Cell>
+    <Cell><Data ss:Type="Number">5.1543039999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bologna</Data></Cell>
+    <Cell><Data ss:Type="Number">3.3958710000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">105</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ferrara</Data></Cell>
+    <Cell><Data ss:Type="Number">6.4716500000000003</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ravenna</Data></Cell>
+    <Cell><Data ss:Type="Number">5.3111620000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Forlì-Cesena</Data></Cell>
+    <Cell><Data ss:Type="Number">5.8972569999999997</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rimini</Data></Cell>
+    <Cell><Data ss:Type="Number">7.6080170000000003</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Massa-Carrara</Data></Cell>
+    <Cell><Data ss:Type="Number">11.309466</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lucca</Data></Cell>
+    <Cell><Data ss:Type="Number">5.986097</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pistoia</Data></Cell>
+    <Cell><Data ss:Type="Number">5.3843189999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Firenze</Data></Cell>
+    <Cell><Data ss:Type="Number">5.0103780000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">77</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Livorno</Data></Cell>
+    <Cell><Data ss:Type="Number">5.2124519999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pisa</Data></Cell>
+    <Cell><Data ss:Type="Number">5.5389030000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Arezzo</Data></Cell>
+    <Cell><Data ss:Type="Number">5.4826790000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Siena</Data></Cell>
+    <Cell><Data ss:Type="Number">5.096762</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Grosseto</Data></Cell>
+    <Cell><Data ss:Type="Number">5.035895</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Prato</Data></Cell>
+    <Cell><Data ss:Type="Number">7.1558529999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28699999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Perugia</Data></Cell>
+    <Cell><Data ss:Type="Number">6.5455719999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Terni</Data></Cell>
+    <Cell><Data ss:Type="Number">7.1224040000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.26900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pesaro e Urbino</Data></Cell>
+    <Cell><Data ss:Type="Number">5.9392569999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ancona</Data></Cell>
+    <Cell><Data ss:Type="Number">5.7518459999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Macerata</Data></Cell>
+    <Cell><Data ss:Type="Number">5.1983459999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ascoli Piceno</Data></Cell>
+    <Cell><Data ss:Type="Number">9.5940740000000009</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.28599999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Viterbo</Data></Cell>
+    <Cell><Data ss:Type="Number">11.738301</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.32300000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rieti</Data></Cell>
+    <Cell><Data ss:Type="Number">7.9876449999999997</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.32300000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Roma</Data></Cell>
+    <Cell><Data ss:Type="Number">8.1023630000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">221</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.32300000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Latina</Data></Cell>
+    <Cell><Data ss:Type="Number">10.893693000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.32300000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Frosinone</Data></Cell>
+    <Cell><Data ss:Type="Number">7.4181369999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.32300000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">L'Aquila</Data></Cell>
+    <Cell><Data ss:Type="Number">9.8526550000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27100000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Teramo</Data></Cell>
+    <Cell><Data ss:Type="Number">5.9966879999999998</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27100000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pescara</Data></Cell>
+    <Cell><Data ss:Type="Number">7.9132170000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27100000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Chieti</Data></Cell>
+    <Cell><Data ss:Type="Number">8.4612970000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.27100000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Campobasso</Data></Cell>
+    <Cell><Data ss:Type="Number">9.5372249999999994</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29699999999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Isernia</Data></Cell>
+    <Cell><Data ss:Type="Number">7.8927120000000004</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29699999999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Caserta</Data></Cell>
+    <Cell><Data ss:Type="Number">8.9520140000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.33900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Benevento</Data></Cell>
+    <Cell><Data ss:Type="Number">11.113664</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.33900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Napoli</Data></Cell>
+    <Cell><Data ss:Type="Number">14.593543</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.33900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Avellino</Data></Cell>
+    <Cell><Data ss:Type="Number">8.0720179999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.33900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Salerno</Data></Cell>
+    <Cell><Data ss:Type="Number">14.011663</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.33900000000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Foggia</Data></Cell>
+    <Cell><Data ss:Type="Number">13.632346999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bari</Data></Cell>
+    <Cell><Data ss:Type="Number">11.106175</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Taranto</Data></Cell>
+    <Cell><Data ss:Type="Number">9.5646930000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Brindisi</Data></Cell>
+    <Cell><Data ss:Type="Number">14.298385</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lecce</Data></Cell>
+    <Cell><Data ss:Type="Number">16.177316999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Potenza</Data></Cell>
+    <Cell><Data ss:Type="Number">10.490149000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.34899999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Matera</Data></Cell>
+    <Cell><Data ss:Type="Number">12.610643</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.34899999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cosenza</Data></Cell>
+    <Cell><Data ss:Type="Number">10.922567000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Catanzaro</Data></Cell>
+    <Cell><Data ss:Type="Number">11.284977</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Reggio di Calabria</Data></Cell>
+    <Cell><Data ss:Type="Number">11.329685</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Crotone</Data></Cell>
+    <Cell><Data ss:Type="Number">12.043611</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vibo Valentia</Data></Cell>
+    <Cell><Data ss:Type="Number">12.851043000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trapani</Data></Cell>
+    <Cell><Data ss:Type="Number">11.014453</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Palermo</Data></Cell>
+    <Cell><Data ss:Type="Number">17.938663999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Messina</Data></Cell>
+    <Cell><Data ss:Type="Number">14.115475999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Agrigento</Data></Cell>
+    <Cell><Data ss:Type="Number">17.620056000000002</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Caltanissetta</Data></Cell>
+    <Cell><Data ss:Type="Number">15.333284000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Enna</Data></Cell>
+    <Cell><Data ss:Type="Number">15.158867000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Catania</Data></Cell>
+    <Cell><Data ss:Type="Number">11.319677</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ragusa</Data></Cell>
+    <Cell><Data ss:Type="Number">8.9370139999999996</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Siracusa</Data></Cell>
+    <Cell><Data ss:Type="Number">8.4864040000000003</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.35499999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sassari</Data></Cell>
+    <Cell><Data ss:Type="Number">18.970690999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nuoro</Data></Cell>
+    <Cell><Data ss:Type="Number">10.107704999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cagliari</Data></Cell>
+    <Cell><Data ss:Type="Number">10.980675</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Oristano</Data></Cell>
+    <Cell><Data ss:Type="Number">13.925041999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Olbia-Tempio</Data></Cell>
+    <Cell><Data ss:Type="Number">14.175371999999999</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ogliastra</Data></Cell>
+    <Cell><Data ss:Type="Number">12.663876</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Medio Campidano</Data></Cell>
+    <Cell><Data ss:Type="Number">11.892898000000001</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Carbonia-Iglesias</Data></Cell>
+    <Cell><Data ss:Type="Number">11.833587</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.29399999999999998</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>1</ActiveCol>
+     <RangeSelection>C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="gdp">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="113" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="12">
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">gdp per capita</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Torino</Data></Cell>
+    <Cell><Data ss:Type="Number">27700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vercelli</Data></Cell>
+    <Cell><Data ss:Type="Number">24400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Biella</Data></Cell>
+    <Cell><Data ss:Type="Number">26600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Verbano-Cusio-Ossola</Data></Cell>
+    <Cell><Data ss:Type="Number">20200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Novara</Data></Cell>
+    <Cell><Data ss:Type="Number">25300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuneo</Data></Cell>
+    <Cell><Data ss:Type="Number">29000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Asti</Data></Cell>
+    <Cell><Data ss:Type="Number">21500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Alessandria</Data></Cell>
+    <Cell><Data ss:Type="Number">26000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Valle d'Aosta/Vallée d'Aoste</Data></Cell>
+    <Cell><Data ss:Type="Number">32200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Imperia</Data></Cell>
+    <Cell><Data ss:Type="Number">22000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Savona</Data></Cell>
+    <Cell><Data ss:Type="Number">27700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Genova</Data></Cell>
+    <Cell><Data ss:Type="Number">28200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">La Spezia</Data></Cell>
+    <Cell><Data ss:Type="Number">24800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Varese</Data></Cell>
+    <Cell><Data ss:Type="Number">26800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Como</Data></Cell>
+    <Cell><Data ss:Type="Number">24300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lecco</Data></Cell>
+    <Cell><Data ss:Type="Number">26300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sondrio</Data></Cell>
+    <Cell><Data ss:Type="Number">27600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bergamo</Data></Cell>
+    <Cell><Data ss:Type="Number">29100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Brescia</Data></Cell>
+    <Cell><Data ss:Type="Number">28100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pavia</Data></Cell>
+    <Cell><Data ss:Type="Number">21400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lodi</Data></Cell>
+    <Cell><Data ss:Type="Number">23900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cremona</Data></Cell>
+    <Cell><Data ss:Type="Number">24700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mantova</Data></Cell>
+    <Cell><Data ss:Type="Number">29300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Milano</Data></Cell>
+    <Cell><Data ss:Type="Number">44300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Monza e della Brianza</Data></Cell>
+    <Cell><Data ss:Type="Number">28600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Provincia Autonoma di Bolzano/Bozen</Data></Cell>
+    <Cell><Data ss:Type="Number">36100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bolzano-Bozen</Data></Cell>
+    <Cell><Data ss:Type="Number">36100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Provincia Autonoma di Trento</Data></Cell>
+    <Cell><Data ss:Type="Number">30300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trento</Data></Cell>
+    <Cell><Data ss:Type="Number">30300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Verona</Data></Cell>
+    <Cell><Data ss:Type="Number">31500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vicenza</Data></Cell>
+    <Cell><Data ss:Type="Number">29500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Belluno</Data></Cell>
+    <Cell><Data ss:Type="Number">27300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Treviso</Data></Cell>
+    <Cell><Data ss:Type="Number">28900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Venezia</Data></Cell>
+    <Cell><Data ss:Type="Number">28400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Padova</Data></Cell>
+    <Cell><Data ss:Type="Number">29100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rovigo</Data></Cell>
+    <Cell><Data ss:Type="Number">23800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pordenone</Data></Cell>
+    <Cell><Data ss:Type="Number">26900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Udine</Data></Cell>
+    <Cell><Data ss:Type="Number">28100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Gorizia</Data></Cell>
+    <Cell><Data ss:Type="Number">24700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trieste</Data></Cell>
+    <Cell><Data ss:Type="Number">32200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Piacenza</Data></Cell>
+    <Cell><Data ss:Type="Number">26000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Parma</Data></Cell>
+    <Cell><Data ss:Type="Number">31100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Reggio nell'Emilia</Data></Cell>
+    <Cell><Data ss:Type="Number">30200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Modena</Data></Cell>
+    <Cell><Data ss:Type="Number">32800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bologna</Data></Cell>
+    <Cell><Data ss:Type="Number">34200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ferrara</Data></Cell>
+    <Cell><Data ss:Type="Number">24400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ravenna</Data></Cell>
+    <Cell><Data ss:Type="Number">28600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Forlì-Cesena</Data></Cell>
+    <Cell><Data ss:Type="Number">31300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rimini</Data></Cell>
+    <Cell><Data ss:Type="Number">30400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Massa-Carrara</Data></Cell>
+    <Cell><Data ss:Type="Number">22400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lucca</Data></Cell>
+    <Cell><Data ss:Type="Number">28700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pistoia</Data></Cell>
+    <Cell><Data ss:Type="Number">24800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Firenze</Data></Cell>
+    <Cell><Data ss:Type="Number">31500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Prato</Data></Cell>
+    <Cell><Data ss:Type="Number">26800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Livorno</Data></Cell>
+    <Cell><Data ss:Type="Number">26500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pisa</Data></Cell>
+    <Cell><Data ss:Type="Number">27300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Arezzo</Data></Cell>
+    <Cell><Data ss:Type="Number">23900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Siena</Data></Cell>
+    <Cell><Data ss:Type="Number">27400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Grosseto</Data></Cell>
+    <Cell><Data ss:Type="Number">24800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Perugia</Data></Cell>
+    <Cell><Data ss:Type="Number">23500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Terni</Data></Cell>
+    <Cell><Data ss:Type="Number">22400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pesaro e Urbino</Data></Cell>
+    <Cell><Data ss:Type="Number">25500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ancona</Data></Cell>
+    <Cell><Data ss:Type="Number">28800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Macerata</Data></Cell>
+    <Cell><Data ss:Type="Number">24100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ascoli Piceno</Data></Cell>
+    <Cell><Data ss:Type="Number">22600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fermo</Data></Cell>
+    <Cell><Data ss:Type="Number">23400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Viterbo</Data></Cell>
+    <Cell><Data ss:Type="Number">20100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rieti</Data></Cell>
+    <Cell><Data ss:Type="Number">18900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Roma</Data></Cell>
+    <Cell><Data ss:Type="Number">33000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Latina</Data></Cell>
+    <Cell><Data ss:Type="Number">21400</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Frosinone</Data></Cell>
+    <Cell><Data ss:Type="Number">20600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">L'Aquila</Data></Cell>
+    <Cell><Data ss:Type="Number">19300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Teramo</Data></Cell>
+    <Cell><Data ss:Type="Number">21900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pescara</Data></Cell>
+    <Cell><Data ss:Type="Number">22300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Chieti</Data></Cell>
+    <Cell><Data ss:Type="Number">20900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Isernia</Data></Cell>
+    <Cell><Data ss:Type="Number">20700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Campobasso</Data></Cell>
+    <Cell><Data ss:Type="Number">20100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Caserta</Data></Cell>
+    <Cell><Data ss:Type="Number">14100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Benevento</Data></Cell>
+    <Cell><Data ss:Type="Number">15300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Napoli</Data></Cell>
+    <Cell><Data ss:Type="Number">16800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Avellino</Data></Cell>
+    <Cell><Data ss:Type="Number">16900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Salerno</Data></Cell>
+    <Cell><Data ss:Type="Number">16600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Taranto</Data></Cell>
+    <Cell><Data ss:Type="Number">16800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Brindisi</Data></Cell>
+    <Cell><Data ss:Type="Number">14800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lecce</Data></Cell>
+    <Cell><Data ss:Type="Number">15600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Foggia</Data></Cell>
+    <Cell><Data ss:Type="Number">14800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bari</Data></Cell>
+    <Cell><Data ss:Type="Number">19500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Barletta-Andria-Trani</Data></Cell>
+    <Cell><Data ss:Type="Number">14200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Potenza</Data></Cell>
+    <Cell><Data ss:Type="Number">18500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Matera</Data></Cell>
+    <Cell><Data ss:Type="Number">17300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cosenza</Data></Cell>
+    <Cell><Data ss:Type="Number">16200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Crotone</Data></Cell>
+    <Cell><Data ss:Type="Number">14600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Catanzaro</Data></Cell>
+    <Cell><Data ss:Type="Number">19500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vibo Valentia</Data></Cell>
+    <Cell><Data ss:Type="Number">15200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Reggio di Calabria</Data></Cell>
+    <Cell><Data ss:Type="Number">15900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trapani</Data></Cell>
+    <Cell><Data ss:Type="Number">14500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Palermo</Data></Cell>
+    <Cell><Data ss:Type="Number">18600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Messina</Data></Cell>
+    <Cell><Data ss:Type="Number">16600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Agrigento</Data></Cell>
+    <Cell><Data ss:Type="Number">13200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Caltanissetta</Data></Cell>
+    <Cell><Data ss:Type="Number">15300</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Enna</Data></Cell>
+    <Cell><Data ss:Type="Number">14900</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Catania</Data></Cell>
+    <Cell><Data ss:Type="Number">16800</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ragusa</Data></Cell>
+    <Cell><Data ss:Type="Number">17500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Siracusa</Data></Cell>
+    <Cell><Data ss:Type="Number">18100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sassari</Data></Cell>
+    <Cell><Data ss:Type="Number">17500</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nuoro</Data></Cell>
+    <Cell><Data ss:Type="Number">17000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cagliari</Data></Cell>
+    <Cell><Data ss:Type="Number">24600</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Oristano</Data></Cell>
+    <Cell><Data ss:Type="Number">15700</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Olbia-Tempio</Data></Cell>
+    <Cell><Data ss:Type="Number">24000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ogliastra</Data></Cell>
+    <Cell><Data ss:Type="Number">15100</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Medio Campidano</Data></Cell>
+    <Cell><Data ss:Type="Number">11000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Carbonia-Iglesias</Data></Cell>
+    <Cell><Data ss:Type="Number">14400</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R113C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
