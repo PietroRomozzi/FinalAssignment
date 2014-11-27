@@ -2,7 +2,7 @@
 title: "Final Assignment"
 author: "Pietro Romozzi & Federico Colombo"
 date: "20 novembre 2014"
-output: html_document
+output: pdf_document
 bibliography:
 - Reference2.bib
 - RPackages.bib
@@ -205,7 +205,7 @@ Dataset <- merge(x = Merging1, y = gdp, by = "county", all = T )
 # Summary for the variables used
 library(stargazer)
 
-stargazer(Dataset[,] , summary = T, title = "Data Description", digits = 2, type = "html", header = F)
+stargazer(Dataset[,] , summary = T, title = "Data Description", digits = 2, type = "latex", header = F)
 
 # Scatterplot matrix
 require("car")
@@ -234,7 +234,7 @@ LinModel1 <- lm(st_suicide_rate ~ gdp_pro_capita + unemployment_rate + populatio
 
 library(xtable)
 
-Model1Table <- xtable(LinModel1, label = "html", caption = "First Model Estimation", digits=2)
+Model1Table <- xtable(LinModel1, caption = "First Model Estimation", digits=2)
 
 print.xtable(Model1Table, comment = F)
 
@@ -254,7 +254,7 @@ $$
 
 LinModel2 <- lm(st_suicide_rate ~ gdp_pro_capita + unemployment_rate + population + avg_temperature + avg_precipitations, data = Dataset)
 
-Model2Table <- xtable(LinModel2, label = "html", caption = "Second Model Estimation", digits=2)
+Model2Table <- xtable(LinModel2, caption = "Second Model Estimation", digits=2)
 
 print.xtable(Model2Table, comment = F)
 ```
@@ -263,11 +263,11 @@ print.xtable(Model2Table, comment = F)
 
 CoefTab <- coefficients(LinModel2)
 
-knitr :: kable(CoefTab, format = "html", digits = 3, caption = "Table of Coefficients")
+knitr :: kable(CoefTab, digits = 3, caption = "Table of Coefficients")
 
 Confint <- confint(LinModel2)
 
-knitr :: kable(Confint, format = "html", digits = 3, caption = "Table of Coefficients")
+knitr :: kable(Confint, digits = 3, caption = "Table of Coefficients")
 
 ```
 
