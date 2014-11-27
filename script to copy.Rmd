@@ -1,0 +1,23 @@
+---
+title: "packages"
+author: "Pietro Romozzi & Federico Colombo"
+date: "27 novembre 2014"
+output: html_document
+---
+
+
+
+# Load packages and create BibTeX file
+RPackages <- c("ggplot2", "repmis")
+
+# Load PackagesUsed and create .bib BibTeX file
+repmis::LoadandCite(RPackages, file = "RPackages.bib", install = FALSE)
+
+# Other Packages
+require("devtools")
+install_github("rsdmx", "opensdmx")
+library("rsdmx")
+library(knitr)
+library(plyr)
+library(ggplot2)
+
