@@ -16,7 +16,7 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>11640</WindowHeight>
+  <WindowHeight>7880</WindowHeight>
   <WindowWidth>25400</WindowWidth>
   <WindowTopX>120</WindowTopX>
   <WindowTopY>140</WindowTopY>
@@ -452,7 +452,7 @@
     <Cell><Data ss:Type="Number">0.28599999999999998</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">Forlì-Cesena</Data></Cell>
+    <Cell><Data ss:Type="String">Forli-Cesena</Data></Cell>
     <Cell><Data ss:Type="Number">5.8972569999999997</Data></Cell>
     <Cell><Data ss:Type="Number">42</Data></Cell>
     <Cell><Data ss:Type="Number">390738</Data></Cell>
@@ -1039,11 +1039,12 @@
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <Selected/>
-   <TopRowVisible>66</TopRowVisible>
+   <TopRowVisible>34</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>110</ActiveRow>
+     <ActiveRow>41</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
