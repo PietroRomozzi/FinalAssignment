@@ -37,268 +37,204 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="main">
-  <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="111" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="111" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="12">
    <Column ss:AutoFitWidth="0" ss:Width="192"/>
    <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="156"/>
-   <Column ss:AutoFitWidth="0" ss:Width="106" ss:Span="7"/>
+   <Column ss:AutoFitWidth="0" ss:Width="106" ss:Span="6"/>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">county</Data></Cell>
     <Cell><Data ss:Type="String">unemployment_rate</Data></Cell>
-    <Cell><Data ss:Type="String">avg_temperature</Data></Cell>
     <Cell><Data ss:Type="String">suicides</Data></Cell>
     <Cell><Data ss:Type="String">population</Data></Cell>
     <Cell><Data ss:Type="String">suicide_rate</Data></Cell>
     <Cell><Data ss:Type="String">st_suicide_rate</Data></Cell>
     <Cell><Data ss:Type="String">gini_index</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">region</Data></Cell>
-    <Cell><Data ss:Type="String">avg_temperature</Data></Cell>
-    <Cell><Data ss:Type="String">tot_precipitations</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Torino</Data></Cell>
     <Cell><Data ss:Type="Number">8.3233540000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">214</Data></Cell>
+    <Cell><Data ss:Type="Number">214</Data></Cell>
     <Cell><Data ss:Type="Number">2247780</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.520504675724492E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.5205046757244922</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Piemonte</Data></Cell>
-    <Cell><Data ss:Type="Number">9.5500000000000007</Data></Cell>
-    <Cell><Data ss:Type="Number">926.1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Vercelli</Data></Cell>
     <Cell><Data ss:Type="Number">5.1995120000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
     <Cell><Data ss:Type="Number">176941</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.4774020718770665E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.4774020718770657</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Valle d'Aosta</Data></Cell>
-    <Cell><Data ss:Type="Number">1.8</Data></Cell>
-    <Cell><Data ss:Type="Number">774.3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Novara</Data></Cell>
     <Cell><Data ss:Type="Number">7.5779990000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
     <Cell><Data ss:Type="Number">365559</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.3859486430371025E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.3859486430371026</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Lombardia</Data></Cell>
-    <Cell><Data ss:Type="Number">9.9499999999999993</Data></Cell>
-    <Cell><Data ss:Type="Number">808.4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Cuneo</Data></Cell>
     <Cell><Data ss:Type="Number">2.8928389999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">69</Data></Cell>
+    <Cell><Data ss:Type="Number">69</Data></Cell>
     <Cell><Data ss:Type="Number">586378</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.1767153610810774E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">11.767153610810775</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Trentino Alto-Adige</Data></Cell>
-    <Cell><Data ss:Type="Number">5.95</Data></Cell>
-    <Cell><Data ss:Type="Number">868.3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Asti</Data></Cell>
     <Cell><Data ss:Type="Number">5.8147089999999997</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
     <Cell><Data ss:Type="Number">217573</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.7327012083300776E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.7327012083300772</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Veneto</Data></Cell>
-    <Cell><Data ss:Type="Number">11.95</Data></Cell>
-    <Cell><Data ss:Type="Number">904.3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Alessandria</Data></Cell>
     <Cell><Data ss:Type="Number">5.8101770000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">49</Data></Cell>
+    <Cell><Data ss:Type="Number">49</Data></Cell>
     <Cell><Data ss:Type="Number">427229</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.1469258875216804E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">11.469258875216804</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Friuli-Venezia Giulia</Data></Cell>
-    <Cell><Data ss:Type="Number">11.35</Data></Cell>
-    <Cell><Data ss:Type="Number">1116</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Biella</Data></Cell>
     <Cell><Data ss:Type="Number">6.6974489999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
     <Cell><Data ss:Type="Number">182192</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.2624044963554932E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">12.624044963554931</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Liguria</Data></Cell>
-    <Cell><Data ss:Type="Number">13.75</Data></Cell>
-    <Cell><Data ss:Type="Number">969.8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Verbano-Cusio-Ossola</Data></Cell>
     <Cell><Data ss:Type="Number">5.110589</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
     <Cell><Data ss:Type="Number">160264</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.4876453851145609E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.4876453851145612</Data></Cell>
     <Cell><Data ss:Type="Number">0.30599999999999999</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Emilia-Romagna</Data></Cell>
-    <Cell><Data ss:Type="Number">12.75</Data></Cell>
-    <Cell><Data ss:Type="Number">801.8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Valle d'Aosta</Data></Cell>
     <Cell><Data ss:Type="Number">4.4180450000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
     <Cell><Data ss:Type="Number">126806</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8860621737141779E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.8860621737141781</Data></Cell>
     <Cell><Data ss:Type="Number">0.27600000000000002</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Toscana</Data></Cell>
-    <Cell><Data ss:Type="Number">13.65</Data></Cell>
-    <Cell><Data ss:Type="Number">833.1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Imperia</Data></Cell>
     <Cell><Data ss:Type="Number">6.760637</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
     <Cell><Data ss:Type="Number">214502</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.4591379101360362E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.459137910136036</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Umbria</Data></Cell>
-    <Cell><Data ss:Type="Number">12.4</Data></Cell>
-    <Cell><Data ss:Type="Number">867.5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Savona</Data></Cell>
     <Cell><Data ss:Type="Number">4.9144730000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
     <Cell><Data ss:Type="Number">281028</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.4050557239847986E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.4050557239847983</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Marche</Data></Cell>
-    <Cell><Data ss:Type="Number">13.45</Data></Cell>
-    <Cell><Data ss:Type="Number">839</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Genova</Data></Cell>
     <Cell><Data ss:Type="Number">5.5027929999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
     <Cell><Data ss:Type="Number">855834</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">3.271662495296985E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">3.2716624952969848</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Lazio</Data></Cell>
-    <Cell><Data ss:Type="Number">13.9</Data></Cell>
-    <Cell><Data ss:Type="Number">958.2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">La Spezia</Data></Cell>
     <Cell><Data ss:Type="Number">6.5655109999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
     <Cell><Data ss:Type="Number">219330</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.015273788355446E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.0152737883554463</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Abruzzo</Data></Cell>
-    <Cell><Data ss:Type="Number">11.95</Data></Cell>
-    <Cell><Data ss:Type="Number">1001.7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Varese</Data></Cell>
     <Cell><Data ss:Type="Number">6.3255229999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">55</Data></Cell>
+    <Cell><Data ss:Type="Number">55</Data></Cell>
     <Cell><Data ss:Type="Number">871886</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.3081641407248198E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.3081641407248199</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Molise</Data></Cell>
-    <Cell><Data ss:Type="Number">14.2</Data></Cell>
-    <Cell><Data ss:Type="Number">1066.9000000000001</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Como</Data></Cell>
     <Cell><Data ss:Type="Number">5.7189880000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="Number">29</Data></Cell>
     <Cell><Data ss:Type="Number">586735</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.9426061169011565E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.9426061169011568</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Campania</Data></Cell>
-    <Cell><Data ss:Type="Number">14.95</Data></Cell>
-    <Cell><Data ss:Type="Number">1040.7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Sondrio</Data></Cell>
     <Cell><Data ss:Type="Number">4.4358940000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
     <Cell><Data ss:Type="Number">180814</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.4932472043094008E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">14.932472043094007</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Puglia</Data></Cell>
-    <Cell><Data ss:Type="Number">15.9</Data></Cell>
-    <Cell><Data ss:Type="Number">812.1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Milano</Data></Cell>
     <Cell><Data ss:Type="Number">5.7020479999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">240</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
     <Cell><Data ss:Type="Number">3038420</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8988421613865101E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.8988421613865096</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Basilicata</Data></Cell>
-    <Cell><Data ss:Type="Number">14.75</Data></Cell>
-    <Cell><Data ss:Type="Number">865.1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Bergamo</Data></Cell>
     <Cell><Data ss:Type="Number">3.6981290000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">73</Data></Cell>
+    <Cell><Data ss:Type="Number">73</Data></Cell>
     <Cell><Data ss:Type="Number">1086277</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.7202012009828067E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.7202012009828067</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Calabria</Data></Cell>
-    <Cell><Data ss:Type="Number">16.850000000000001</Data></Cell>
-    <Cell><Data ss:Type="Number">988.9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Brescia</Data></Cell>
     <Cell><Data ss:Type="Number">5.2754560000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">84</Data></Cell>
+    <Cell><Data ss:Type="Number">84</Data></Cell>
     <Cell><Data ss:Type="Number">1238044</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.7848961749340084E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.7848961749340084</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Sicilia</Data></Cell>
-    <Cell><Data ss:Type="Number">18.149999999999999</Data></Cell>
-    <Cell><Data ss:Type="Number">836</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pavia</Data></Cell>
     <Cell><Data ss:Type="Number">5.50427</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
     <Cell><Data ss:Type="Number">535822</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.9052782453874603E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.9052782453874606</Data></Cell>
     <Cell><Data ss:Type="Number">0.29199999999999998</Data></Cell>
-    <Cell ss:Index="12"><Data ss:Type="String">Sardegna</Data></Cell>
-    <Cell><Data ss:Type="Number">17.45</Data></Cell>
-    <Cell><Data ss:Type="Number">470.4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Cremona</Data></Cell>
     <Cell><Data ss:Type="Number">5.4998719999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">357623</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.5924814679145354E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.5924814679145358</Data></Cell>
@@ -307,7 +243,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Mantova</Data></Cell>
     <Cell><Data ss:Type="Number">4.7550169999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">36</Data></Cell>
+    <Cell><Data ss:Type="Number">36</Data></Cell>
     <Cell><Data ss:Type="Number">408336</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.8162689549782535E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.8162689549782538</Data></Cell>
@@ -316,7 +252,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Lecco</Data></Cell>
     <Cell><Data ss:Type="Number">4.5371709999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
     <Cell><Data ss:Type="Number">336310</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.8123754869019651E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.8123754869019653</Data></Cell>
@@ -324,12 +260,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Monza-Brianza</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="Number">840129</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">840129</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Lodi</Data></Cell>
     <Cell><Data ss:Type="Number">5.4174519999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">223755</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.9383477464190738E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.9383477464190744</Data></Cell>
@@ -338,7 +274,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Bolzano</Data></Cell>
     <Cell><Data ss:Type="Number">2.857119</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell><Data ss:Type="Number">53</Data></Cell>
     <Cell><Data ss:Type="Number">504643</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.0502474026192774E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">10.502474026192774</Data></Cell>
@@ -347,7 +283,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Trento</Data></Cell>
     <Cell><Data ss:Type="Number">3.510596</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="Number">41</Data></Cell>
     <Cell><Data ss:Type="Number">524832</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8120236570940793E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.8120236570940795</Data></Cell>
@@ -356,7 +292,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Verona</Data></Cell>
     <Cell><Data ss:Type="Number">4.674156</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">64</Data></Cell>
+    <Cell><Data ss:Type="Number">64</Data></Cell>
     <Cell><Data ss:Type="Number">900542</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.1068312194211934E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.1068312194211938</Data></Cell>
@@ -365,7 +301,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Vicenza</Data></Cell>
     <Cell><Data ss:Type="Number">5.0198590000000003</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">58</Data></Cell>
+    <Cell><Data ss:Type="Number">58</Data></Cell>
     <Cell><Data ss:Type="Number">859205</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.7504262661413747E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.7504262661413748</Data></Cell>
@@ -374,7 +310,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Belluno</Data></Cell>
     <Cell><Data ss:Type="Number">4.4330939999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
     <Cell><Data ss:Type="Number">210001</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.1428517007061872E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">11.428517007061872</Data></Cell>
@@ -383,7 +319,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Treviso</Data></Cell>
     <Cell><Data ss:Type="Number">4.7300240000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell><Data ss:Type="Number">53</Data></Cell>
     <Cell><Data ss:Type="Number">876790</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.0447769705402665E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.0447769705402665</Data></Cell>
@@ -392,7 +328,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Venezia</Data></Cell>
     <Cell><Data ss:Type="Number">5.6426319999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">53</Data></Cell>
+    <Cell><Data ss:Type="Number">53</Data></Cell>
     <Cell><Data ss:Type="Number">846962</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.2576597297163273E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.2576597297163277</Data></Cell>
@@ -401,7 +337,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Padova</Data></Cell>
     <Cell><Data ss:Type="Number">4.331474</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">65</Data></Cell>
+    <Cell><Data ss:Type="Number">65</Data></Cell>
     <Cell><Data ss:Type="Number">921361</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.0547809164920154E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.0547809164920157</Data></Cell>
@@ -410,7 +346,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Rovigo</Data></Cell>
     <Cell><Data ss:Type="Number">3.1976849999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
     <Cell><Data ss:Type="Number">242349</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.9515368332446184E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.9515368332446181</Data></Cell>
@@ -419,7 +355,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Udine</Data></Cell>
     <Cell><Data ss:Type="Number">5.6207849999999997</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="Number">41</Data></Cell>
     <Cell><Data ss:Type="Number">535430</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.6573968585996307E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.6573968585996308</Data></Cell>
@@ -428,7 +364,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Gorizia</Data></Cell>
     <Cell><Data ss:Type="Number">5.7351559999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
     <Cell><Data ss:Type="Number">140143</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.5626824029741045E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.5626824029741044</Data></Cell>
@@ -437,7 +373,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Trieste</Data></Cell>
     <Cell><Data ss:Type="Number">4.6711109999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
     <Cell><Data ss:Type="Number">232601</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">3.0094453592202956E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">3.0094453592202957</Data></Cell>
@@ -446,7 +382,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pordenone</Data></Cell>
     <Cell><Data ss:Type="Number">4.9186059999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
     <Cell><Data ss:Type="Number">310811</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.3652122994359914E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.3652122994359921</Data></Cell>
@@ -455,7 +391,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Piacenza</Data></Cell>
     <Cell><Data ss:Type="Number">2.1277089999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
     <Cell><Data ss:Type="Number">284616</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.7297130168367203E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.7297130168367207</Data></Cell>
@@ -464,7 +400,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Parma</Data></Cell>
     <Cell><Data ss:Type="Number">3.7678609999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
     <Cell><Data ss:Type="Number">427434</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.6563071725693328E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.656307172569333</Data></Cell>
@@ -473,7 +409,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Reggio Emilia</Data></Cell>
     <Cell><Data ss:Type="Number">4.9958739999999997</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">52</Data></Cell>
+    <Cell><Data ss:Type="Number">52</Data></Cell>
     <Cell><Data ss:Type="Number">517316</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.0051883181652994E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">10.051883181652993</Data></Cell>
@@ -482,7 +418,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Modena</Data></Cell>
     <Cell><Data ss:Type="Number">5.1543039999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">43</Data></Cell>
+    <Cell><Data ss:Type="Number">43</Data></Cell>
     <Cell><Data ss:Type="Number">685777</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.2702598658164393E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.2702598658164392</Data></Cell>
@@ -491,7 +427,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Bologna</Data></Cell>
     <Cell><Data ss:Type="Number">3.3958710000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">105</Data></Cell>
+    <Cell><Data ss:Type="Number">105</Data></Cell>
     <Cell><Data ss:Type="Number">976243</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.0755518861594911E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">10.755518861594911</Data></Cell>
@@ -500,7 +436,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ferrara</Data></Cell>
     <Cell><Data ss:Type="Number">6.4716500000000003</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
     <Cell><Data ss:Type="Number">353481</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.4870191042800034E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.4870191042800034</Data></Cell>
@@ -509,7 +445,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ravenna</Data></Cell>
     <Cell><Data ss:Type="Number">5.3111620000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
     <Cell><Data ss:Type="Number">384761</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.5767528413742552E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.5767528413742546</Data></Cell>
@@ -518,7 +454,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Forlì-Cesena</Data></Cell>
     <Cell><Data ss:Type="Number">5.8972569999999997</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">42</Data></Cell>
+    <Cell><Data ss:Type="Number">42</Data></Cell>
     <Cell><Data ss:Type="Number">390738</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.0748890560938532E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">10.748890560938532</Data></Cell>
@@ -527,7 +463,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Rimini</Data></Cell>
     <Cell><Data ss:Type="Number">7.6080170000000003</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
     <Cell><Data ss:Type="Number">321769</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.9450226715438718E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.945022671543871</Data></Cell>
@@ -536,7 +472,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Massa-Carrara</Data></Cell>
     <Cell><Data ss:Type="Number">11.309466</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
     <Cell><Data ss:Type="Number">199650</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.0157776108189337E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.0157776108189331</Data></Cell>
@@ -545,7 +481,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Lucca</Data></Cell>
     <Cell><Data ss:Type="Number">5.986097</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
     <Cell><Data ss:Type="Number">388327</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.2104180239849399E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.21041802398494</Data></Cell>
@@ -554,7 +490,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pistoia</Data></Cell>
     <Cell><Data ss:Type="Number">5.3843189999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">287866</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.9476770441802787E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.9476770441802786</Data></Cell>
@@ -563,7 +499,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Firenze</Data></Cell>
     <Cell><Data ss:Type="Number">5.0103780000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">77</Data></Cell>
+    <Cell><Data ss:Type="Number">77</Data></Cell>
     <Cell><Data ss:Type="Number">973145</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.9124899167133366E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.9124899167133362</Data></Cell>
@@ -572,7 +508,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Livorno</Data></Cell>
     <Cell><Data ss:Type="Number">5.2124519999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
     <Cell><Data ss:Type="Number">335247</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.8606132195068111E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.8606132195068108</Data></Cell>
@@ -581,7 +517,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pisa</Data></Cell>
     <Cell><Data ss:Type="Number">5.5389030000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">39</Data></Cell>
+    <Cell><Data ss:Type="Number">39</Data></Cell>
     <Cell><Data ss:Type="Number">411190</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.4846664558963014E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.484666455896301</Data></Cell>
@@ -590,7 +526,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Arezzo</Data></Cell>
     <Cell><Data ss:Type="Number">5.4826790000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">343676</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.8194345837358444E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.8194345837358448</Data></Cell>
@@ -599,7 +535,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Siena</Data></Cell>
     <Cell><Data ss:Type="Number">5.096762</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">31</Data></Cell>
     <Cell><Data ss:Type="Number">266621</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.1626991122229682E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">11.626991122229681</Data></Cell>
@@ -608,7 +544,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Grosseto</Data></Cell>
     <Cell><Data ss:Type="Number">5.035895</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
     <Cell><Data ss:Type="Number">220564</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.9744291906204096E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.974429190620409</Data></Cell>
@@ -617,7 +553,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Prato</Data></Cell>
     <Cell><Data ss:Type="Number">7.1558529999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
     <Cell><Data ss:Type="Number">245916</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.5395012931244811E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.5395012931244807</Data></Cell>
@@ -626,7 +562,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Perugia</Data></Cell>
     <Cell><Data ss:Type="Number">6.5455719999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">44</Data></Cell>
+    <Cell><Data ss:Type="Number">44</Data></Cell>
     <Cell><Data ss:Type="Number">655844</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.7089124852861347E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.7089124852861346</Data></Cell>
@@ -635,7 +571,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Terni</Data></Cell>
     <Cell><Data ss:Type="Number">7.1224040000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
     <Cell><Data ss:Type="Number">228424</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8800826533113861E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.8800826533113861</Data></Cell>
@@ -644,7 +580,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pesaro e Urbino</Data></Cell>
     <Cell><Data ss:Type="Number">5.9392569999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="Number">29</Data></Cell>
     <Cell><Data ss:Type="Number">362583</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.998168695167727E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.9981686951677267</Data></Cell>
@@ -653,7 +589,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ancona</Data></Cell>
     <Cell><Data ss:Type="Number">5.7518459999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="Number">41</Data></Cell>
     <Cell><Data ss:Type="Number">473865</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.652253278887447E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.6522532788874464</Data></Cell>
@@ -662,7 +598,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Macerata</Data></Cell>
     <Cell><Data ss:Type="Number">5.1983459999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
     <Cell><Data ss:Type="Number">319607</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8221065245754948E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.8221065245754948</Data></Cell>
@@ -671,7 +607,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ascoli Piceno</Data></Cell>
     <Cell><Data ss:Type="Number">9.5940740000000009</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
     <Cell><Data ss:Type="Number">210407</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.0301178192740729E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.0301178192740732</Data></Cell>
@@ -679,14 +615,14 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Fermo</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="Number">174857</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">174857</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">0</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">0</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Viterbo</Data></Cell>
     <Cell><Data ss:Type="Number">11.738301</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
     <Cell><Data ss:Type="Number">312864</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.3514370461286689E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.3514370461286687</Data></Cell>
@@ -695,7 +631,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Rieti</Data></Cell>
     <Cell><Data ss:Type="Number">7.9876449999999997</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
     <Cell><Data ss:Type="Number">155164</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.155835116392978E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.1558351163929776</Data></Cell>
@@ -704,7 +640,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Roma</Data></Cell>
     <Cell><Data ss:Type="Number">8.1023630000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">221</Data></Cell>
+    <Cell><Data ss:Type="Number">221</Data></Cell>
     <Cell><Data ss:Type="Number">3997465</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.5285036892130386E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.5285036892130384</Data></Cell>
@@ -713,7 +649,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Latina</Data></Cell>
     <Cell><Data ss:Type="Number">10.893693000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
     <Cell><Data ss:Type="Number">544732</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.8744483525843901E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.8744483525843902</Data></Cell>
@@ -722,7 +658,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Frosinone</Data></Cell>
     <Cell><Data ss:Type="Number">7.4181369999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
     <Cell><Data ss:Type="Number">492661</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">3.4506486204509797E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">3.4506486204509796</Data></Cell>
@@ -731,7 +667,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">L'Aquila</Data></Cell>
     <Cell><Data ss:Type="Number">9.8526550000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
     <Cell><Data ss:Type="Number">298343</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.3574007099211308E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.3574007099211309</Data></Cell>
@@ -740,7 +676,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Teramo</Data></Cell>
     <Cell><Data ss:Type="Number">5.9966879999999998</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
     <Cell><Data ss:Type="Number">306349</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.5077770777773068E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.5077770777773072</Data></Cell>
@@ -749,7 +685,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Pescara</Data></Cell>
     <Cell><Data ss:Type="Number">7.9132170000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
     <Cell><Data ss:Type="Number">314661</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.7204419994851604E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.7204419994851605</Data></Cell>
@@ -758,7 +694,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Chieti</Data></Cell>
     <Cell><Data ss:Type="Number">8.4612970000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
     <Cell><Data ss:Type="Number">387956</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.7328356823969734E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.7328356823969733</Data></Cell>
@@ -767,7 +703,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Campobasso</Data></Cell>
     <Cell><Data ss:Type="Number">9.5372249999999994</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
     <Cell><Data ss:Type="Number">226419</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.0665447687694061E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.0665447687694058</Data></Cell>
@@ -776,7 +712,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Isernia</Data></Cell>
     <Cell><Data ss:Type="Number">7.8927120000000004</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
     <Cell><Data ss:Type="Number">87241</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.7312502149218829E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.7312502149218831</Data></Cell>
@@ -785,7 +721,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Caserta</Data></Cell>
     <Cell><Data ss:Type="Number">8.9520140000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">39</Data></Cell>
+    <Cell><Data ss:Type="Number">39</Data></Cell>
     <Cell><Data ss:Type="Number">904921</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.3097684770272764E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.3097684770272764</Data></Cell>
@@ -794,7 +730,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Benevento</Data></Cell>
     <Cell><Data ss:Type="Number">11.113664</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">284900</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.0200070200070202E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.0200070200070206</Data></Cell>
@@ -803,7 +739,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Napoli</Data></Cell>
     <Cell><Data ss:Type="Number">14.593543</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
     <Cell><Data ss:Type="Number">3054956</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">3.2733695673521976E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">3.2733695673521974</Data></Cell>
@@ -812,7 +748,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Avellino</Data></Cell>
     <Cell><Data ss:Type="Number">8.0720179999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
     <Cell><Data ss:Type="Number">429157</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">3.9612542729117784E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">3.9612542729117783</Data></Cell>
@@ -821,7 +757,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Salerno</Data></Cell>
     <Cell><Data ss:Type="Number">14.011663</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">62</Data></Cell>
+    <Cell><Data ss:Type="Number">62</Data></Cell>
     <Cell><Data ss:Type="Number">1092876</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.6731047255132332E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.673104725513233</Data></Cell>
@@ -830,7 +766,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Foggia</Data></Cell>
     <Cell><Data ss:Type="Number">13.632346999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">31</Data></Cell>
     <Cell><Data ss:Type="Number">626072</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.9515071748936222E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.9515071748936226</Data></Cell>
@@ -839,7 +775,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Bari</Data></Cell>
     <Cell><Data ss:Type="Number">11.106175</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">75</Data></Cell>
+    <Cell><Data ss:Type="Number">75</Data></Cell>
     <Cell><Data ss:Type="Number">1247303</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.0129735918217146E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.0129735918217149</Data></Cell>
@@ -848,7 +784,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Taranto</Data></Cell>
     <Cell><Data ss:Type="Number">9.5646930000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
     <Cell><Data ss:Type="Number">584649</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.6181555086898291E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.6181555086898287</Data></Cell>
@@ -857,7 +793,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Brindisi</Data></Cell>
     <Cell><Data ss:Type="Number">14.298385</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
     <Cell><Data ss:Type="Number">400801</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.4910067589651726E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.491006758965173</Data></Cell>
@@ -865,12 +801,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Barletta-Andria-Trani</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="Number">391723</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">391723</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Lecce</Data></Cell>
     <Cell><Data ss:Type="Number">16.177316999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
     <Cell><Data ss:Type="Number">802018</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.2393063497327993E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.2393063497327992</Data></Cell>
@@ -879,7 +815,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Potenza</Data></Cell>
     <Cell><Data ss:Type="Number">10.490149000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
     <Cell><Data ss:Type="Number">377935</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.4086813870109946E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.4086813870109944</Data></Cell>
@@ -888,7 +824,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Matera</Data></Cell>
     <Cell><Data ss:Type="Number">12.610643</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
     <Cell><Data ss:Type="Number">200101</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.9964667842739413E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.9964667842739416</Data></Cell>
@@ -897,7 +833,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Cosenza</Data></Cell>
     <Cell><Data ss:Type="Number">10.922567000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
     <Cell><Data ss:Type="Number">714030</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.1818551041272776E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.181855104127278</Data></Cell>
@@ -906,7 +842,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Catanzaro</Data></Cell>
     <Cell><Data ss:Type="Number">11.284977</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
     <Cell><Data ss:Type="Number">359841</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.1138113778029746E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.1138113778029748</Data></Cell>
@@ -915,7 +851,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Reggio Calabria</Data></Cell>
     <Cell><Data ss:Type="Number">11.329685</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
     <Cell><Data ss:Type="Number">550967</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.352467570653052E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.3524675706530518</Data></Cell>
@@ -924,7 +860,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Crotone</Data></Cell>
     <Cell><Data ss:Type="Number">12.043611</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
     <Cell><Data ss:Type="Number">170803</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.6111075332400491E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.6111075332400491</Data></Cell>
@@ -933,7 +869,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Vibo Valentia</Data></Cell>
     <Cell><Data ss:Type="Number">12.851043000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
     <Cell><Data ss:Type="Number">163409</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">5.5076525772754252E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">5.507652577275425</Data></Cell>
@@ -942,7 +878,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Trapani</Data></Cell>
     <Cell><Data ss:Type="Number">11.014453</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
     <Cell><Data ss:Type="Number">429917</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.8846637839396907E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.8846637839396907</Data></Cell>
@@ -951,7 +887,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Palermo</Data></Cell>
     <Cell><Data ss:Type="Number">17.938663999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
     <Cell><Data ss:Type="Number">1243585</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.744347993904719E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.7443479939047188</Data></Cell>
@@ -960,7 +896,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Messina</Data></Cell>
     <Cell><Data ss:Type="Number">14.115475999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">31</Data></Cell>
     <Cell><Data ss:Type="Number">649824</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.7705224799330279E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.7705224799330281</Data></Cell>
@@ -969,7 +905,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Agrigento</Data></Cell>
     <Cell><Data ss:Type="Number">17.620056000000002</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">31</Data></Cell>
     <Cell><Data ss:Type="Number">446837</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">6.9376528801330233E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">6.9376528801330233</Data></Cell>
@@ -978,7 +914,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Caltanissetta</Data></Cell>
     <Cell><Data ss:Type="Number">15.333284000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
     <Cell><Data ss:Type="Number">273099</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.7880219261147059E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.7880219261147055</Data></Cell>
@@ -987,7 +923,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Enna</Data></Cell>
     <Cell><Data ss:Type="Number">15.158867000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
     <Cell><Data ss:Type="Number">173451</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">8.0714438083378018E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">8.0714438083378024</Data></Cell>
@@ -996,7 +932,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Catania</Data></Cell>
     <Cell><Data ss:Type="Number">11.319677</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
     <Cell><Data ss:Type="Number">1078766</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.1714329150158607E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.1714329150158607</Data></Cell>
@@ -1005,7 +941,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ragusa</Data></Cell>
     <Cell><Data ss:Type="Number">8.9370139999999996</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
     <Cell><Data ss:Type="Number">307492</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.8050811078011787E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.805081107801179</Data></Cell>
@@ -1014,7 +950,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Siracusa</Data></Cell>
     <Cell><Data ss:Type="Number">8.4864040000000003</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
     <Cell><Data ss:Type="Number">399933</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">4.2507119942590383E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">4.2507119942590386</Data></Cell>
@@ -1023,7 +959,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Sassari</Data></Cell>
     <Cell><Data ss:Type="Number">18.970690999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">31</Data></Cell>
     <Cell><Data ss:Type="Number">328043</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.449980642781586E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.4499806427815862</Data></Cell>
@@ -1032,7 +968,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Nuoro</Data></Cell>
     <Cell><Data ss:Type="Number">10.107704999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
     <Cell><Data ss:Type="Number">159197</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.2563050811259006E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">12.563050811259007</Data></Cell>
@@ -1041,7 +977,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Cagliari</Data></Cell>
     <Cell><Data ss:Type="Number">10.980675</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">63</Data></Cell>
+    <Cell><Data ss:Type="Number">63</Data></Cell>
     <Cell><Data ss:Type="Number">550580</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.1442478840495478E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">11.442478840495477</Data></Cell>
@@ -1050,7 +986,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Oristano</Data></Cell>
     <Cell><Data ss:Type="Number">13.925041999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
     <Cell><Data ss:Type="Number">163916</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">7.3208228604895194E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">7.3208228604895194</Data></Cell>
@@ -1059,7 +995,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Olbia-Tempio</Data></Cell>
     <Cell><Data ss:Type="Number">14.175371999999999</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
     <Cell><Data ss:Type="Number">150501</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">9.3022637723337386E-5</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">9.3022637723337382</Data></Cell>
@@ -1068,7 +1004,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Ogliastra</Data></Cell>
     <Cell><Data ss:Type="Number">12.663876</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
     <Cell><Data ss:Type="Number">57329</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.9187496729403965E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">19.187496729403964</Data></Cell>
@@ -1077,7 +1013,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Medio Campidano</Data></Cell>
     <Cell><Data ss:Type="Number">11.892898000000001</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
     <Cell><Data ss:Type="Number">101256</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.2838745358299754E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">12.838745358299754</Data></Cell>
@@ -1086,7 +1022,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Carbonia-Iglesias</Data></Cell>
     <Cell><Data ss:Type="Number">11.833587</Data></Cell>
-    <Cell ss:Index="4"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
     <Cell><Data ss:Type="Number">128540</Data></Cell>
     <Cell ss:Formula="=RC[-2]/RC[-1]"><Data ss:Type="Number">1.01135833203672E-4</Data></Cell>
     <Cell ss:Formula="=RC[-1]*100000"><Data ss:Type="Number">10.1135833203672</Data></Cell>
@@ -1103,11 +1039,11 @@
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
    <Selected/>
+   <TopRowVisible>66</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>8</ActiveRow>
-     <ActiveCol>6</ActiveCol>
+     <ActiveRow>110</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
