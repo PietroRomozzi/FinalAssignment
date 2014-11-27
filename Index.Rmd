@@ -2,11 +2,10 @@
 title: "Final Assignment"
 author: "Pietro Romozzi & Federico Colombo"
 date: "20 novembre 2014"
-output: html_document
+output: pdf_document
 bibliography:
 - Reference2.bib
 - RPackages.bib
-
 ---
 
 > Abstract:
@@ -147,8 +146,7 @@ to deal with these issues at a local and so more manageable level, as stated bef
 
 
 ```{r, include=FALSE, echo=FALSE}
-# Set working directory.
-setwd("~/Desktop/Hertie/1st Semester/Collaborative Social Science Data Analysis/FinalAssignment/")
+
 
 # Loading tidy data frames that we have to merge.
 
@@ -176,7 +174,7 @@ Dataset <- merge(x = Merging1, y = gdp, by = "county", all = T )
 # Summary for the variables used
 library(stargazer)
 
-stargazer(Dataset[,] , summary = T, title = "Data Description", digits = 2, type = "html", header = F)
+stargazer(Dataset[,] , summary = T, title = "Data Description", digits = 2, type = "latex", header = F)
 
 # Scatterplot matrix
 require("car")
