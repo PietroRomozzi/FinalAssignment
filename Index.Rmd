@@ -228,7 +228,7 @@ $$
 
 # Our Model
 
-LinModel1 <- lm(st_suicide_rate ~ gdp_pro_capita + unemployment_rate + population + gini_index + avg_temperature + avg_temp_range + avg_precipitations, data = Dataset)
+LinModel1 <- lm(st_suicide_rate ~ gdp_per_capita + unemployment_rate + population + gini_index + avg_temperature + avg_temp_range + avg_precipitations, data = Dataset)
 
 # Summary Table of the Model
 
@@ -252,7 +252,7 @@ $$
 
 # Dropped avg_temp_range and gini_index
 
-LinModel2 <- lm(st_suicide_rate ~ gdp_pro_capita + unemployment_rate + population + avg_temperature + avg_precipitations, data = Dataset)
+LinModel2 <- lm(st_suicide_rate ~ gdp_per_capita + unemployment_rate + population + avg_temperature + avg_precipitations, data = Dataset)
 
 Model2Table <- xtable(LinModel2, caption = "Second Model Estimation", digits=2)
 
