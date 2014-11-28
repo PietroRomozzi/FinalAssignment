@@ -68,7 +68,7 @@ Recognizing these characteristics, will hopefully provide information to policy 
 
 As said above, this paper will focus on the relation between suicidal behaviours (an extreme consequence of mental disorders) and various factors concerning climate [@Seasonaldisorder] and socio-economic context.
 
-Regarding climate, we want to test if the following hypoteses hold true:
+Regarding *climate*, we want to test if the following hypoteses hold true:
 
 - Suicide rate in a certain Italian county increases when the average temperature is low [@heatwave].
 
@@ -76,7 +76,7 @@ Regarding climate, we want to test if the following hypoteses hold true:
 
 - Suicide rate increases when precipitations happen to be frequent.
 
-Regarding the socio-economical framework instead, we want to verify the follwing hypoteses:
+Regarding the *socio-economical framework* instead, we want to verify the follwing hypoteses:
 
 - Suicide rate increases when GDP per capita is high [@AGlance2013]. 
 
@@ -93,11 +93,10 @@ The hypotheses we want to test originate from a careful review of the relevant l
 
 ### Sources and data gathering
 
-For the scope of this work, regional data were necessary; in particular we looked for data about weather (i.e. temperature and precipitations), GDP per capita and inequalities (i.e. gini index).
+For the scope of this work, data for different variables were necessary for all of the Italian counties; in particular we looked for data about temperature, temperature range, precipitations, GDP, gini's index, unemployment, population, and naturally suicides which is our depending variable.
 Fortunately, most of the data required were founded in the Italian National Institute of Statistics (ISTAT) database, or in other databases of ISTAT-related agencies.
-Accessing to the ISTAT database was fairly easy especially because data were clear and well structured. Nevertheless importing data in R, where we intended to carry out our analysis, was more problematic.
-One necessary step was to export relevant data as .cvs files from the ISTAT website, and then proceed to import them in R using the *read.csv* command.
-Data from the ISTAT database were not tidy though, as in tidy data:
+Accessing to the ISTAT database is free and easy, and data are clear and well structured. 
+Nevertheless, we needed to process them in order to obtain so-called **tidy data**, required by R to analyze and modeling them. We recall a definition of tidy data, according to [@Wickham2014]:
 
 1. Each variable forms a column.
 
@@ -105,12 +104,10 @@ Data from the ISTAT database were not tidy though, as in tidy data:
 
 3. Each type of observational unit forms a table.
 
-
-Therefore, we have to put our data trough a tidying process, that is structuring our datasets to facilitate analysis [@Wickham2014].
-
-To do so we partly used excel's functions, since the data got from ISTAT were not so many and fairly manageable.
-Then we concluded our tidying process in R, using more complex functions which Excel does not allow to use easily.
-What follows is the final part of the tidying process we did on R. As the reader could see, at first we cleaned data for suicides, then we merged them with other data we have cleaned and merged together before, in R as well.
+Given that, we firstly collected and downloaded all the data from ISTAT website (**http://www.istat.it/it/**), then, considering that the amount of observation was "human-manageable", for practical reasons we carried out the tidying process in Microsoft Excel.
+Basically, we made sure that all names of different counties were the same in all datasets we downloaded (otherwise we simply renamed the counties), as well as checking that our values were expressed in the appropriate scale, further discussed below. For istance, we decided to rescale GDP per capita from Euro to thousands Euros, to facilitate the interpretation of our results.
+To sum up, we downloaded data from ISTAT and tidied them usinc Excel obtaining three dataframes, namely **gdp_data**, **socio_eco_data** and **climate_data**. Then we converted them in csv format, easily readable by R, and finally we moved into RStudio to merge these three dataframes.
+In the end we collected 110 observations, one for each Italian county, of 9 variables.
 
 ### Considered variables, data gathering, software used:
 
@@ -171,11 +168,11 @@ Also the Italian Statistical Agency and Eurostat use this categorization for sim
 
 # Loading tidy data frames that we have to merge.
 
-meteo <- read.csv("meteo.csv", header = TRUE, sep = ";", dec = ",",fill = TRUE)
+meteo <- read.csv("climate_data.csv", header = TRUE, sep = ";", dec = ",",fill = TRUE)
 
-gdp <- read.csv("gdp.csv", header = T, sep =";", dec = ",", fill = T)
+gdp <- read.csv("gdp_data.csv", header = T, sep =";", dec = ",", fill = T)
 
-main <- read.csv("main_dataset.csv", header = T, sep =";", dec = ",", fill = T)
+main <- read.csv("socio_eco_data.csv", header = T, sep =";", dec = ",", fill = T)
 
 # Merging
 library(dplyr)
