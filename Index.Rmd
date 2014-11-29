@@ -11,7 +11,7 @@ bibliography:
 
 **Abstract:**
 
-With the present work, the authors intend to create a descriptive model of economical, social and environmental characteristics of a territory, aiming to assess the impact of these factors on suicide rates. The model will be tested on Italian counties (110 observations).
+With the present work, the authors intend to create a descriptive model of economical, social and climatic characteristics of a territory, aiming to assess the impact of these factors on suicide rates. The model will be tested on Italian counties (110 observations), couniting on data obtained by ISTAT.
 
 
 ## Introduction:
@@ -86,7 +86,7 @@ Regarding the *socio-economical framework* instead, we want to verify the follwi
 
 - Suicide rate is higher in more populated counties.
 
-The hypotheses we want to test originate from a careful review of the relevant literature regarding mental disorders, suicidal patterns and the magnitude of climate on them.
+The hypotheses we want to test originate from a careful review of the relevant literature regarding mental disorders, suicidal patterns and the magnitude of climate impact on them.
 
 
 ## Methodology:
@@ -94,7 +94,8 @@ The hypotheses we want to test originate from a careful review of the relevant l
 ### Sources and data gathering
 
 For the scope of this work, data for different variables were necessary for all of the Italian counties; in particular we looked for data about temperature, temperature range, precipitations, GDP, gini's index, unemployment, population, and naturally suicides which is our depending variable.
-Fortunately, most of the data required were founded in the Italian National Institute of Statistics (ISTAT) database, or in other databases of ISTAT-related agencies.
+We decided to carry out our analysis on a single year, because of the higher complexity of panel data both in analysis phase and in data gathering process. To have a significant result, we believed that recent data were necessary, so we identified 2009 as an acceptable compromise between proximity in time and availability of data for all of our variables, thus all data gathered and used regard 2009.
+Most of the data required were founded in the Italian National Institute of Statistics (ISTAT) database, and fortunately the missing ones were available in other databases of ISTAT-related agencies or in the Eurostat database.
 Accessing to the ISTAT database is free and easy, and data are clear and well structured. 
 Nevertheless, we needed to process them in order to obtain so-called **tidy data**, required by R to analyze and modeling them. We recall a definition of tidy data, according to [@Wickham2014]:
 
@@ -104,67 +105,49 @@ Nevertheless, we needed to process them in order to obtain so-called **tidy data
 
 3. Each type of observational unit forms a table.
 
-Given that, we firstly collected and downloaded all the data from ISTAT website (**http://www.istat.it/it/**), then, considering that the amount of observation was "human-manageable", for practical reasons we carried out the tidying process in Microsoft Excel.
+Given that, we firstly collected and downloaded all the data from ISTAT website (**http://www.istat.it/it/**) and from ISTAT-related agencies' databases. Then, considering that the amount of observation was "human-manageable", for practical reasons we carried out the tidying process in Microsoft Excel.
 Basically, we made sure that all names of different counties were the same in all datasets we downloaded (otherwise we simply renamed the counties), as well as checking that our values were expressed in the appropriate scale, further discussed below. For istance, we decided to rescale GDP per capita from Euro to thousands Euros, to facilitate the interpretation of our results.
-To sum up, we downloaded data from ISTAT and tidied them usinc Excel obtaining three dataframes, namely **gdp_data**, **socio_eco_data** and **climate_data**. Then we converted them in csv format, easily readable by R, and finally we moved into RStudio to merge these three dataframes.
+To sum up, we downloaded data and tidied them usinc Excel obtaining three dataframes, namely **gdp_data**, **socio_eco_data** and **climate_data**. Then we converted them in .csv format, easily readable by R, and finally we moved into RStudio to merge these three dataframes.
 In the end we collected 110 observations, one for each Italian county, of 9 variables.
 
-### Considered variables, data gathering, software used:
+### Considered variables and analysis structure:
 
-Variable *suicide rate* is defined by the WHO as the standardized number of deaths by suicide every 100.000 people occurred in a certain country. 
-Since the focus of this paper is on intra-regional differences in Italy, data from the Italian National Institute of Statistics (ISTAT) will be used. Data regarding our five specific case studies are provided. 
+The variable *suicide rate* is defined by the WHO as the standardized number of deaths by suicide every 100.000 people occurred in a certain country. 
+We collected data about suicide rate for every Italian county, from the ISTAT database.
 
-Variable *solar radiation* measures the level of solar irradiance in megajoul (MJ) per square meter. The Italian Air Force offers 
-a metereological service, which is responsible for the measurement of solar irradiance on the Italian territory. They also provide 
-documentation gathered from various metereological units, unfortunately not for every single Italian region.
-Because of that, if regional measurement appears to be too complex for the scope of this work, we might decide not to use this variable or not to consider some regions.
+We adopted the variable *population* as a proxy of the degree of urbanization of the area. It describes the total number of people living in the county. 
+Carrying out our analysis, we decided to take value for population in logaritmic scale.
+Also in this case, we found the data about population in the ISTAT database.
 
-Variable *urban population* measures of the degree of urbanization of a population. It describes the percentage of the total 
-population living in urban areas, as defined by the country. Also in this case, data provided by Istat will be used.
+Regarding the variable *GDP per capita*, we found in the ISTAT database a precious source. Nevertheless, the data provided were expressed in Euro, deemed not to provide significant impact in our linear analysis since a one-euro variation is certainly too small to impact on suicide rate. Therefore, using Excel during our data cleaning process, we expressed GDP per capita in thousands Euro, so that our coefficient will represent the impact on suicide rate caused by a variation of 1000 Euro, perhaps delivering more significant results.
 
-Regarding variable *GDP per capita*, we will use Eurostat's database, where it is possible to find data regarding GDP and 
-GDP per capita for every single region in the European Union. Database is easy to access and to use.
+The *Gini Coefficient*, is the most common measure of income inequality. It varies between 0 and 1 and expresses inequality among values of the frequency distribution of income for our target counties. Even these data were available via ISTAT, which provides the index either including households' income from the rent of owned properties or not. Since in Italy, has been culturally widespread to invest in real estate, at least until the economic crisis of 2008 and the subsequent introduction of a strong tax levied on real estate properties, we believe that adopting the Gini index including rent might better represent the italian context.
+As expected, we also notice gini's index to be slightly higher in Southern counties compared to the Centre and the North.
 
-Variable *average temperature* simply corresponds to the value of the annual average temperature in a certain region, while
-variable *precipitations* measures the annual quantitiy of rain in millimiters. Data are provided by ISTAT 
-(based on Unità per la climatologia e la meteorologia applicate all'agricoltura).
+We included in our analysis also *unemployment rate* since economical, social and psychological consequences of job loss might have an influence in mental disorders and eventually in suicidal behavior.
+This data, provided by ISTAT refers to the share of the labor force that is without work but available for and seeking employment.
 
-Finally, variable *Gini Coefficient*, the most common measure of income inequality, varies between 0 and 1 and expresses
-inequality among values of the frequency distribution of income for our target regions. Eurostat provides this typology of data
-for all European regions.
+The variable *average temperature* simply corresponds to the value of the annual average temperature in a certain county expressed in Celsius degrees. Insted, *average temperature range* corresponds to the average difference between the maximum and the minimum temperature registered in the county, again expressed in Celsius degrees. Then, *precipitations* measures the annual quantitiy of rain expressed in millimiters. Those data about climate are obtained from CRA-CMA, a ISTAT-related agency, particularly the department for meteorology applied to agriculture [@NotaIstat2012].
 
-Data presented above regard:
+Lastly, we would like to include also *solar radiation* measuring the level of solar irradiance in megajoul (MJ) per square meter. The Italian Air Force offers a metereological service, which is responsible for the measurement of solar irradiance on the Italian territory. Although we intended to use this variable, county-level data were not available, so eventually we dropped it.
 
-- Data about climate obtained from CRA-CMA (Department for meteorology applied to agriculture, ISTAT) regarding annual average temperatures, measured in Celsius degrees, and average annual precipitations, measured in millimiters for all years between 2005 and 2009 [@NotaIstat2012].
+We believe that a linear model was an effective way to analyze our dataframe because it could give a clear idea of the impact of the selected indipendent variables on suicides which we chose as to be the dependent variable.
+As the reader will observe below, we started from a linear model including all the variables we considered, then recognizing that some variables were particularly unsignificant, we opted to remove two of them obtaining a simplified model which appeared fairly significant and interesting.
+In the end we carried out our analysis providing two linear models, whose interpretation will be discussed further, then we enrich the statistical output with some visual displays, particularly focusing on the relationship between suicides and climatic factors.
 
-- Data about GDP measured in Euro per capita, found in the ISTAT database as well.
-
-- Data about the Gini Index downloaded from the Istat website. Again, data for the three macroregions we are interested in were available.
-As expected, Gini's index is slightly higher in Southern Regions compared to the Centre and the North.
-
-- Data about suicide rate, measured as number of suicides on 100000 inhabitants.
-
-Unfortunately, as will be explained in the next chapters, after we have carried out our analysis, we found a result problematic to interpret.
-Conviced that a possible explanation, might reside in too aggregated data, we opted for running our linear model on regional data instead of grouped-by-macro-area ones.
-It required the construction of another dataframe, whose data were found in the ISTAT database too, and that we processed directly in Excel since we decided to gather data just for 2009.
-Further developments of our study will try to include a bigger number of observation concerning italian regions or even a panel data analysis.
-
-We believed that a linear model was an effective way to analyze our dataframe because it could give a clear idea of the impact of the selected indipendent variables on suicides which we chose as to be the dependent variable.
-We also opted for a semplifications of the model, obtained by removing particularly unsignificant variables.
-Further information about our analysis and about the interpretation of our model, will be discussed in the following sections.
-In the meantime, we provide the code we used in R to create our complete and simplified model.
-
-All the data gathered will be processed using "R" [see @CiteR]. We use as well some packages developed for R, namely "ggplot2" [see @R-ggplot2] and "repmis" [see @R-repmis].
+All the data gathered will be processed using "R" [see @CiteR]. We use as well some packages developed for R, namely **ggplot2** [see @R-ggplot2], **stargazer** [see @stargazer], **repmis** [see @R-repmis], **car** [see @Rcar] and **knitr** [see @knitr].
 
 
 ### Case studies:
 
-We take into consideration five areas: North-West, North-East, Centre, South and Islands in Italy. 
-The advantage of adopting this categorization is that instead of twenty different case studies (there are twenty different regions in Italy), among which some could be really similar because they are located in the same macro area, we will work with only five. 
-Also the Italian Statistical Agency and Eurostat use this categorization for simplicity and some of the databases we are going to use already include data divided according to this idea of clustering homogeneous Italian regions together. 
+In a previous work, we tried to test the model we will use in this analysis on regional data. 
+However we faced the big issue of not having enough observations, given that Italy counts only 20 regions and it resulted in an unsignificant model. 
+Nevertheless, we were fairly confident in the goodness of our model, therefore we decided to test it again on a sufficient number of observations. This led us to move our analysis to a county-level, thus having available 110 observations.
+Eventually, in the present work we take into consideration all the Italian counties.
 
 ```{r, include=FALSE, echo=FALSE}
 
+# WD to be set before starting.
 
 # Loading tidy data frames that we have to merge.
 
@@ -175,7 +158,6 @@ gdp <- read.csv("gdp_data.csv", header = T, sep =";", dec = ",", fill = T)
 main <- read.csv("socio_eco_data.csv", header = T, sep =";", dec = ",", fill = T)
 
 # Merging
-library(dplyr)
 
 Merging1 <- merge(x = main , y = meteo , by = "county", all = T )
 

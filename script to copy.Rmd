@@ -8,7 +8,7 @@ output: html_document
 
 
 # Load packages and create BibTeX file
-RPackages <- c("ggplot2", "repmis")
+RPackages <- c("ggplot2", "repmis", "knitr", "stargazer", "car")
 
 # Load PackagesUsed and create .bib BibTeX file
 repmis::LoadandCite(RPackages, file = "RPackages.bib", install = FALSE)
