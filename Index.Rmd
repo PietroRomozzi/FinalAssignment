@@ -1,6 +1,6 @@
 ---
 title: "Explaining suicide in Italian counties"
-author: "Pietro Romozzi & Federico Colombo"
+author: "Pietro Romozzi & Federico Colombo-Ercole"
 date: "20 novembre 2014"
 output: html_document
 bibliography:
@@ -299,7 +299,7 @@ Regarding the other variables we included in our model, only GDP per capita and 
 
 ## Conclusion:
 
-In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables choosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioural change, which may predispose a person to parasuicidal behaviour [@OECD]. Rain might therefore play a "cooling" effect, preventing this from happening.
+In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables choosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioural change, which may predispose a person to parasuicidal behaviour [@OECD]. Rain might therefore play a "cooling" effect, preventing this from happening. 
 
 ## References:
 

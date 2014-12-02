@@ -1,6 +1,6 @@
 ---
-title: "Final Assignment"
-author: "Pietro Romozzi & Federico Colombo"
+title: "Explaining suicide in Italian counties"
+author: "Pietro Romozzi & Federico Colombo-Ercole"
 date: "20 novembre 2014"
 output: html_document
 bibliography:
@@ -11,15 +11,15 @@ bibliography:
 
 **Abstract:**
 
-With the present work, the authors intend to create a descriptive model of economical, social and environmental characteristics of a territory, aiming to assess the impact of these factors on suicide rates. The model will be tested on Italian counties (110 observations).
+With the present work, the authors intend to create a descriptive model of economical, social and climatic characteristics of a territory, aiming to assess the impact of these factors on suicide rates. The model will be tested on Italian counties (110 observations), couniting on data obtained by ISTAT.
 
 
 ## Introduction:
 
 ### Topic
 
-Several papers have tried to propose an explanatory framework to describe how climate conditions affect mental health. 
-Climate may affect individuals’ mental health both directly through extreme climate change, which exposes people to trauma, 
+Several papers have tried to propose an explanatory framework to describe how climate conditions affect individuals' mental health. 
+Climate may affect it both directly through extreme climate change, which exposes people to trauma, 
 or indirectly, as some climate’s characteristics may affect physical activity and mental health. Extreme temperature or 
 humidity rates have an influence on individuals’ physical health as it becomes more energy consuming to do physical activity, 
 to work or to travel, but also mental health could be negatively affected as climate erodes physical environments, which 
@@ -49,41 +49,26 @@ the natural and social environment on which people depend for their wellbeing.
 
 ### Relevance
 
-One obvious reason why this work is potentially interesting is that mental disorders and suicide are nowadays often discussed 
-both among insitution in health's field and media.
-Moreover, our focus on environmental and climati characteristics grounds on a recent body of studies which recognizes the link 
-between these dimentions and mental disorders. These variables are going to be included in addition to more traditional 
-variables (i.e. related to economic dimensions) to develop a wider model of analysys of mental disorders. As a consequence, 
-the broad spectrum of this study makes the present work interesting and innovative.
-Another valuable point is the regional focus which allows to underscore, in the end, contingent specific characteristics of 
-the territory rather than the whole country. Therefore, bringing the analysis at a smaller level, makes easier for policy makers 
-to deal with these issues at a local and so more manageable level, as stated before.
-
-According to the latest WHO report concerning suicide prevention [see the latest report by @PreventingSuicideWHO], "Globally, 
-among young adults 15-29 years of age suicide accounts for 8.5% of all deaths and is ranked as the second leading cause of 
-death (after traffic accidents). Among adults aged 30-49 years it accounts for 4.1% of all deaths and is ranked the fifth leading 
-cause of death". This statement displays clearly the relevance of this issue, which is also greater considering that these 
-estimation are often underrated because of the difficulties in recognizing sucide as a cause of death - will of committing 
-suicide could be not recognized, families could prefer not to speak about it, and so on [see the note by @NotaIstat2012].
-The above mentioned paper, moreover, is considered by several OECD countries as a strong stimulus to move further in suicide 
-prevention. Among these countries, we are going to focus on Italy, particularly at regional level. 
-Indeed, our convintion is that a focus on smaller than countries environments, does help in assessing how factors affecting 
-suicides impact differently within the same country, thus highlighting a possible variance among regions which is overlooked 
-by country-level aggregate data.
-In addition to this "micro-level" focus, we also intend to stress some environmental and climatic characteristics which could 
-contribute to create "suicide-genic" environment.
-Recognizing these characteristics will be helpful for setting efficient prevention strategies, and, especially considering the 
-regional focus, it will be more easy for policy makers to design policies tailored to the specific regional reality.
-Especially the climatic characteristic mentioned, according to recent literature, has turned to be correlated with mental health 
-and, trough it, with suicide. These are often not considered, as some auhors like @Berry2009 underline, therefore we believe that 
-including them in the present paper could deliver interesting results and perhaps stimulate further research in this branch.
+One obvious reason why this work is potentially interesting is that mental disorders and suicide are nowadays often discussed and debated both among insitution in health's field and media.
+Indeed, according to the latest WHO report concerning suicide prevention [see the latest report by @PreventingSuicideWHO], "Globally, among young adults 15-29 years of age suicide accounts for 8.5% of all deaths and is ranked as the second leading cause of death (after traffic accidents). Among adults aged 30-49 years it accounts for 4.1% of all deaths and is ranked the fifth leading 
+cause of death". This statement displays clearly the relevance of this issue, which is also greater considering that these estimation are often underrated because of the difficulties in recognizing sucide as a cause of death - will of committing suicide could be not recognized, families could prefer not to speak about it, and so on [see the note by @NotaIstat2012].
+The above mentioned paper, moreover, is considered by several OECD countries as a strong stimulus to move further in suicide prevention.
+Among these countries, we are going to focus on Italy, particularly at provincial level. 
+Our convintion is that a focus on smaller-than-countries environments, does help in assessing how factors affecting suicides impact differently within the same country, thus highlighting a possible variance among regions which is overlooked by country-level aggregate data.
+In addition to this "micro-level" focus, we also intend to stress some environmental and climatic characteristics which could contribute to create "suicide-genic" environment.
+In fact, according to a recently developed body of studies, there is a correlation between environmental-climatic characteristics and mental health. So, considering mental disorder as a possible driver to suicide, we include these types of variables in our study trying to widen the range of explanatory factors for the phenomenon.
+The above mentioned link is often not considered, as some auhors like @Berry2009 underline, therefore we believe that including them in the present paper could deliver interesting results and perhaps stimulate further research in this branch.
+We also do not neglet the use of more "ortodox" variables (i.e. related to economic and social dimensions) as control variables to develop a fairly comprehensive perspective.
+Looking for empirical evidence from Italian data, our aim is to add knowledge to existing literature reporting specific suicide patterns in Italy, among which we will look for evidence of the magnitude of climatic and environmental factors, believing that our wide-spectrum approach makes the present work interesting and innovative.
+Another interesting feature is the provincial focus which allows to underscore, in the end, contingent specific characteristics of the territory rather than the whole country. What is interesting is the the fact that provinces across Italy vary greatly with respect to both socioeconomic factors such as unemployment rate, income distribution, GDP per capita, the South being on average less wealthy and more unequal than the North, and also climatic characteristics differ from region to region.
+Recognizing these characteristics, will hopefully provide information to policy makers for setting efficient preventive strategies at a more manageable and flexible micro-level, serving as an input for tailored and focused polices.
 
 
 ## Research questions:
 
-The paper will focus on the relation between suicidal behaviours (an extreme consequence of mental disorders) and various factors concerning climate [@Seasonaldisorder] and socio-economic context.
+As said above, this paper will focus on the relation between suicidal behaviours (an extreme consequence of mental disorders) and various factors concerning climate [@Seasonaldisorder] and socio-economic context.
 
-Concerning climate, we want to test if the following hypoteses hold true:
+Regarding *climate*, we want to test if the following hypoteses hold true:
 
 - Suicide rate in a certain Italian county increases when the average temperature is low [@heatwave].
 
@@ -91,23 +76,28 @@ Concerning climate, we want to test if the following hypoteses hold true:
 
 - Suicide rate increases when precipitations happen to be frequent.
 
+Regarding the *socio-economical framework* instead, we want to verify the follwing hypoteses:
+
 - Suicide rate increases when GDP per capita is high [@AGlance2013]. 
 
 - Suicide rate increases according to economic inequality (represented by the gini index).
 
-The hypothesis we want to test originate from a careful review of the relevant literature regarding mental disorders and climate change. 
-The paper will focus on the relation between suicidal behaviours (an extreme consequence of mental disorders) and various factors concerning climate.
+- Suicide rate increases whereby unemployment rate is higher.
+
+- Suicide rate is higher in more populated counties.
+
+The hypotheses we want to test originate from a careful review of the relevant literature regarding mental disorders, suicidal patterns and the magnitude of climate impact on them.
 
 
 ## Methodology:
 
 ### Sources and data gathering
 
-For the scope of this work, regional data were necessary; in particular we looked for data about weather (i.e. temperature and precipitations), GDP per capita and inequalities (i.e. gini index).
-Fortunately, most of the data required were founded in the Italian National Institute of Statistics (ISTAT) database, or in other databases of ISTAT-related agencies.
-Accessing to the ISTAT database was fairly easy especially because data were clear and well structured. Nevertheless importing data in R, where we intended to carry out our analysis, was more problematic.
-One necessary step was to export relevant data as .cvs files from the ISTAT website, and then proceed to import them in R using the *read.csv* command.
-Data from the ISTAT database were not tidy though, as in tidy data:
+For the scope of this work, data for different variables were necessary for all of the Italian counties; in particular we looked for data about temperature, temperature range, precipitations, GDP, gini's index, unemployment, population, and naturally suicides, which is our depending variable.
+We decided to carry out our analysis on a single year, because of the higher complexity in data gathering process and given the time constraint this research is under. To have a significant result, we believed that recent data were necessary, so we identified 2009 as an acceptable compromise between proximity in time and availability of data for all of our variables, thus all data gathered and used regard 2009.
+Most of the data required were founded in the Italian National Institute of Statistics (ISTAT) database, and fortunately the missing ones were available in other databases of ISTAT-related agencies or in the Eurostat database.
+Accessing to the ISTAT database, which is similar to the OECD one, is free and easy, and data are clear and well structured. 
+Nevertheless, we needed to process them in order to obtain so-called **tidy data**, required by R to analyze and modeling them. We recall a definition of tidy data, according to [@Wickham2014]:
 
 1. Each variable forms a column.
 
@@ -115,80 +105,59 @@ Data from the ISTAT database were not tidy though, as in tidy data:
 
 3. Each type of observational unit forms a table.
 
+Given that, we firstly collected and downloaded all the data from ISTAT website (**http://www.istat.it/it/**) and from ISTAT-related agencies' databases. For practical reasons we carried out the tidying process in Microsoft Excel.
+Basically, we made sure that all names of different counties were the same in all datasets we downloaded (otherwise we simply renamed the counties), as well as checking that our values were expressed in the appropriate scale, further discussed below. For istance, we decided to rescale GDP per capita from Euro to thousands Euros, to facilitate the interpretation of our results.
+To sum up, we downloaded data and tidied them usinc Excel obtaining three dataframes, namely **gdp_data**, **socio_eco_data** and **climate_data**. Then we converted them in .csv format, easily readable by R, and finally we moved into RStudio to merge these three dataframes.
+In the end we collected 110 observations, one for each Italian county, of 9 variables.
 
-Therefore, we have to put our data trough a tidying process, that is structuring our datasets to facilitate analysis [@Wickham2014].
+### Considered variables and analysis structure:
 
-To do so we partly used excel's functions, since the data got from ISTAT were not so many and fairly manageable.
-Then we concluded our tidying process in R, using more complex functions which Excel does not allow to use easily.
-What follows is the final part of the tidying process we did on R. As the reader could see, at first we cleaned data for suicides, then we merged them with other data we have cleaned and merged together before, in R as well.
+The variable *suicide rate* is defined by the WHO as the standardized number of deaths by suicide every 100.000 inhabitants occurred in a certain country. 
+We collected data about suicide rate for every Italian county, from the ISTAT database.
 
-### Considered variables, data gathering, software used:
+We adopted the variable *population* as a proxy of the degree of urbanization of the area. It describes the total number of people living in the county. 
+Carrying out our analysis, we decided to take value for population in logaritmic scale.
+Also in this case, we found the data about population in the ISTAT database.
 
-Variable *suicide rate* is defined by the WHO as the standardized number of deaths by suicide every 100.000 people occurred in a certain country. 
-Since the focus of this paper is on intra-regional differences in Italy, data from the Italian National Institute of Statistics (ISTAT) will be used. Data regarding our five specific case studies are provided. 
+Regarding the variable *GDP per capita*, we found in the Eurostat database a precious source. Nevertheless, the data provided were expressed in Euro, deemed not to provide significant impact in our linear analysis since a one-euro variation is certainly too small to impact on suicide rate. Therefore, using Excel during our data cleaning process, we expressed GDP per capita in thousands Euro, so that our coefficient will represent the impact on suicide rate caused by a variation of 1000 Euro, perhaps delivering more significant results.
 
-Variable *solar radiation* measures the level of solar irradiance in megajoul (MJ) per square meter. The Italian Air Force offers 
-a metereological service, which is responsible for the measurement of solar irradiance on the Italian territory. They also provide 
-documentation gathered from various metereological units, unfortunately not for every single Italian region.
-Because of that, if regional measurement appears to be too complex for the scope of this work, we might decide not to use this variable or not to consider some regions.
+The *Gini Coefficient*, is the most common measure of income inequality. It varies between 0 and 1 and expresses inequality among values of the frequency distribution of income for our target counties. Even these data were available via Eurostat, which provides the index either including households' income from the rent of owned properties or not. Since in Italy, has been culturally widespread to invest in real estate, at least until the economic crisis of 2008 and the subsequent introduction of a strong tax levied on real estate properties, we believe that adopting the Gini index including rent might better represent the italian context.
+As expected, we also notice gini's index to be slightly higher in Southern counties compared to the Centre and the North.
 
-Variable *urban population* measures of the degree of urbanization of a population. It describes the percentage of the total 
-population living in urban areas, as defined by the country. Also in this case, data provided by Istat will be used.
+We included in our analysis also *unemployment rate* since economical, social and psychological consequences of job loss might have an influence in mental disorders and eventually in suicidal behavior.
+This data, provided by ISTAT refers to the share of the labor force that is without work but available for and seeking employment.
 
-Regarding variable *GDP per capita*, we will use Eurostat's database, where it is possible to find data regarding GDP and 
-GDP per capita for every single region in the European Union. Database is easy to access and to use.
+The variable *average temperature* simply corresponds to the value of the annual average temperature in a certain county expressed in Celsius degrees. Insted, *average temperature range* corresponds to the average difference between the maximum and the minimum temperature registered in the county, again expressed in Celsius degrees. Then, *precipitations* measures the annual quantitiy of rain expressed in millimiters. Those data about climate are obtained from CRA-CMA, a ISTAT-related agency, particularly the department for meteorology applied to agriculture [@NotaIstat2012].
 
-Variable *average temperature* simply corresponds to the value of the annual average temperature in a certain region, while
-variable *precipitations* measures the annual quantitiy of rain in millimiters. Data are provided by ISTAT 
-(based on Unità per la climatologia e la meteorologia applicate all'agricoltura).
+Lastly, we would like to include also *solar radiation* measuring the level of solar irradiance in megajoul (MJ) per square meter. The Italian Air Force offers a metereological service, which is responsible for the measurement of solar irradiance on the Italian territory. Although we intended to use this variable, county-level data were not available, so eventually we dropped it.
 
-Finally, variable *Gini Coefficient*, the most common measure of income inequality, varies between 0 and 1 and expresses
-inequality among values of the frequency distribution of income for our target regions. Eurostat provides this typology of data
-for all European regions.
+We believe that a linear model was an effective way to analyze our dataframe because it could give a clear idea of the impact of the selected indipendent variables on suicides which we chose as to be the dependent variable.
+As the reader will observe below, we started from a linear model including all the variables we considered, then recognizing that some variables were particularly unsignificant, we opted to remove two of them obtaining a simplified model which appeared fairly significant and interesting.
+In the end we carried out our analysis providing two linear models, whose interpretation will be discussed further, then we enrich the statistical output with some visual displays, particularly focusing on the relationship between suicides and climatic factors.
 
-Data presented above regard:
-
-- Data about climate obtained from CRA-CMA (Department for meteorology applied to agriculture, ISTAT) regarding annual average temperatures, measured in Celsius degrees, and average annual precipitations, measured in millimiters for all years between 2005 and 2009 [@NotaIstat2012].
-
-- Data about GDP measured in Euro per capita, found in the ISTAT database as well.
-
-- Data about the Gini Index downloaded from the Istat website. Again, data for the three macroregions we are interested in were available.
-As expected, Gini's index is slightly higher in Southern Regions compared to the Centre and the North.
-
-- Data about suicide rate, measured as number of suicides on 100000 inhabitants.
-
-Unfortunately, as will be explained in the next chapters, after we have carried out our analysis, we found a result problematic to interpret.
-Conviced that a possible explanation, might reside in too aggregated data, we opted for running our linear model on regional data instead of grouped-by-macro-area ones.
-It required the construction of another dataframe, whose data were found in the ISTAT database too, and that we processed directly in Excel since we decided to gather data just for 2009.
-Further developments of our study will try to include a bigger number of observation concerning italian regions or even a panel data analysis.
-
-We believed that a linear model was an effective way to analyze our dataframe because it could give a clear idea of the impact of the selected indipendent variables on suicides which we chose as to be the dependent variable.
-We also opted for a semplifications of the model, obtained by removing particularly unsignificant variables.
-Further information about our analysis and about the interpretation of our model, will be discussed in the following sections.
-In the meantime, we provide the code we used in R to create our complete and simplified model.
-
-All the data gathered will be processed using "R" [see @CiteR]. We use as well some packages developed for R, namely "ggplot2" [see @R-ggplot2] and "repmis" [see @R-repmis].
+All the data gathered will be processed using "R" [see @CiteR]. We use as well some packages developed for R, namely **ggplot2** [see @R-ggplot2], **stargazer** [see @stargazer], **repmis** [see @R-repmis], **car** [see @Rcar] and **knitr** [see @knitr].
 
 
 ### Case studies:
 
-We take into consideration five areas: North-West, North-East, Centre, South and Islands in Italy. 
-The advantage of adopting this categorization is that instead of twenty different case studies (there are twenty different regions in Italy), among which some could be really similar because they are located in the same macro area, we will work with only five. 
-Also the Italian Statistical Agency and Eurostat use this categorization for simplicity and some of the databases we are going to use already include data divided according to this idea of clustering homogeneous Italian regions together. 
+In a previous work, we tried to test the model we will use in this analysis on regional data. 
+However, we faced the big issue of not having enough observations, given that Italy counts  20 regions and it resulted in a statistically not significant model. 
+Nevertheless, we were fairly confident in the goodness of our model and interested in giving an answer to our research question, we threfore decided to test it again on a sufficient number of observations. This led us to move our analysis to a county-level, thus having available 110 observations.
+Eventually, in the present work we take into consideration all the Italian counties.
 
 ```{r, include=FALSE, echo=FALSE}
 
+# WD to be set before starting.
 
 # Loading tidy data frames that we have to merge.
 
-meteo <- read.csv("meteo.csv", header = TRUE, sep = ";", dec = ",",fill = TRUE)
+meteo <- read.csv("climate_data.csv", header = TRUE, sep = ";", dec = ",",fill = TRUE)
 
-gdp <- read.csv("gdp.csv", header = T, sep =";", dec = ",", fill = T)
+gdp <- read.csv("gdp_data.csv", header = T, sep =";", dec = ",", fill = T)
 
-main <- read.csv("main_dataset.csv", header = T, sep =";", dec = ",", fill = T)
+main <- read.csv("socio_eco_data.csv", header = T, sep =";", dec = ",", fill = T)
 
 # Merging
-library(dplyr)
 
 Merging1 <- merge(x = main , y = meteo , by = "county", all = T )
 
@@ -197,6 +166,9 @@ Dataset <- merge(x = Merging1, y = gdp, by = "county", all = T )
 ```
 
 ## Descriptive Statistics: 
+
+The table below presents the observations' ranging distributions of our dataset. As it can be seen, the number of observations ranges from 103 to 110 observations. This is due to the fact that exactly during the year taken into consideration, i.e. 2009, some new provinces were created separating them from bigger counties. Not all of the sources we used for our data were up to date, so that the number of provinces results to be lower in some cases. 
+By looking at the summary table created witht the R studio **car** package, the assumption of great variance in both socioeconomic and climate variables across Italy is confirmed. 
 
 ```{r, results = 'asis', echo = FALSE, message=FALSE}
 
@@ -207,6 +179,13 @@ library(stargazer)
 
 stargazer(Dataset, summary = T, title = "Data Description", digits = 2, type = "html", header = F)
 
+
+```
+
+In order to look at the variables' distribution and find out whether we need to normalize them, we created a scatterplot matrix. From the table below, variables employment, population, gini index, average temperature and GDP per capita seem to be skewed. In order to get more appropriate results, all of the variables will be log-transformed.
+
+```{r, results = 'asis', echo = FALSE, message=FALSE}
+
 # Scatterplot matrix
 require("car")
 
@@ -215,19 +194,28 @@ car :: scatterplotMatrix(Dataset[2:9], main = "Scatterplot Matrix")
 
 ## Proposed Model:
 
-The model we want to estimate will therefore be the following: 
+After having looked at the data and at their characteristics, it can be proceeded to the model estimation. As explained above, no panel data analysis will be conducted, instead we opted for an OLS estimation.
+
+The initial model we want to estimate will therefore be the following: 
 
 $$
-suicide_rate = \alpha + \beta_{1}GDP_per_capita + \beta_{2}unemployment_rate + 
-\beta_{3}population + \beta_{4}gini_index + \beta_{5}average_temperature + \beta_{6}average_temperature_range + \beta_{7}average_precipitations + e
+LogStSuicideRate = \alpha + \beta_{1}LogGDPPerCapita + \beta_{2}LogUnemploymentRate + 
+\beta_{3}LogPopulation + \beta_{4}LogGiniIndex + \beta_{5}LogAverageTemperature + \beta_{6}LogAverageTemperatureRange + \beta_{7}LogAveragePrecipitations + e
 $$
 
-### A first linear model using all the explanatory variables:
+We use log-transformed varibales, in order to correct for skewed distributions.
+The model should show if our initial hypothesis that standardized suicide rates of each one of the 110 Italian provinces is affected by climate and environmental factors, while other socioeconomic indicators are used as control variables. 
+The results of our first model estimation show that a positive and statistically significant relationship between GDP per capita and the standardized suicide rate exists, as expected. A one percent increase in GDP will increase suicide rate by 0,699 percent in Italian provinces. On the contrary, both population size and annual precipitations seem to have a negative effect on the standardized suicide rate: a one percent increase in population size and in annual precipitations is expected to decrease suicide rate by 0,174 and by 0,435 percent respectively. With regard to population size, the result seems to be contradictory, because we would expect small communities to better support and help people with mental disorders or even prevent these cases. The negative effect of population size on standardized suicide rate is therefore interesting from our point of view, and should be studied into more detail.
+It is common belief that suicide attempts peak during the cold and grey winter months. The negative coefficient of varible average precipitation, meaning that precipitations would actually prevent suicides from occurring, could be hard to be explained. 
+However, recent research have demonstrated that actually suicides peak during spring and summer in most industrialized countries, rahter than during the Winter months [@seasonal]
+Bridges demonstrated that in Southern European countries suicide are more common during spring, therefore we can assume that this is true also in the Italian case. Since precipitations are more common in Winter, when suicide rates are typically lower in the Mediterranean area, average precipitations' negative coefficient confirms theory. 
+
+
 ```{r, results='asis', echo=FALSE, message=FALSE}
 
 # Our Model
 
-LinModel1 <- lm(st_suicide_rate ~ gdp_per_capita + unemployment_rate + log(population) + gini_index + avg_temperature + avg_temp_range + avg_precipitations, data = Dataset)
+LinModel1 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(unemployment_rate) + log(population) + log(gini_index) + log(avg_temperature) + log(avg_temp_range) + log(avg_precipitations), data = Dataset)
 
 # Summary Table of the Model
 
@@ -235,18 +223,21 @@ stargazer(LinModel1, title = "Estimation of the First Model", digits = 3, type =
 
 ```
 
-### A second, simplified, model:
+Unemployment rate, gini index and variables regarding temperatures were not statistically significant, thus it was decided to run a second model dropping variable gini index, temperature range and unemployment rate.
+The second estimation will therefore be as following:
 
 $$
-SuicideRate = \alpha + \beta_{1} + \beta_{2}UnemploymentRate + 
-\beta_{3}population + \beta_{4}average_temperature + \beta_{5}average_precipitations + e
+LogSuicideRate = \alpha + \beta_{1} + \beta_{2}LogUnemploymentRate + 
+\beta_{3}LogPopulation + \beta_{4}LogAverageTemperature + \beta_{5}LogAveragePrecipitations + e
 $$
 
+
+**secondo me si puo cancellare il risultato M2 e mostrare solo il comparison**
 ```{r, results='asis', echo=FALSE, message=FALSE}
 
-# Dropped avg_temp_range and gini_index
+# Dropped avg_temp_range and gini_index and unemployment rate
 
-LinModel2 <- lm(st_suicide_rate ~ gdp_per_capita + unemployment_rate + log(population) + avg_temperature + avg_precipitations, data = Dataset)
+LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = Dataset)
 
 stargazer(LinModel2, title = "Estimation of the Second Model", digits = 3, type = "html")
 
@@ -258,6 +249,23 @@ stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digi
 
 ```
 
+Compared to the first model estimation, the second one shows a higher adjusted R2 and also the significance of each individual varible has increased. A one percent increase in GDP per capita now increases the standardized suicide rate by 0,529 percent. The effect of population size is sglightly reduced, the new coefficient being 0,158.
+A one percent increase in average precipitations now decreases suicide rates in Italian provinces by 0,461 percent.
+
+After having interpreted the model, we look if it suffers from heteroskedasticity and if the errors are normally distributed by using the *plot* command. By looking at the following tables we can reject both: in fact, the residual versus fitted plot does not show significant signs of heteroskedasticity and also standardized residuals seem to be quite normally distributed. The model we estimated therefore seems not to suffer from any serious issue. 
+
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+
+plot(LinModel2, which = 1)
+
+plot(LinModel2, which = 2)
+
+```
+
+
+
+**si puo cancellare tutto il chunck**
 ```{r, results ='asis', echo = FALSE, message=FALSE}
 
 CoefTab <- coefficients(LinModel2)
@@ -270,23 +278,28 @@ knitr :: kable(Confint, format = "html", digits = 3, caption = "Table of Coeffic
 
 ```
 
-```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
-
-plot(LinModel2, which = 1)
-
-plot(LinModel2, which = 2)
-
-library(ggplot2)
-
-ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = st_suicide_rate), message = F) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
-
-```
 
 
 ## Main findings and discussion:
 
+The goal of this research was to test if sucide behaviour are influenced by factors other than socioeconomic indicators like, for example, unemployment rate or GDP per capita. Many researches have already demonstrated that a strong link between suicide rate and the economic and educational condition of individuals exist: overall, studies [@worldwide] indicate that higher GDP per capita may actually increase suicide rates in certain regions of the world, like Latin American, Caribbean, India, and some countries in South East Asia, while whealth has a negative impact on suicide in most of OECD countries. 
+Apart from this, it was decided to include variables controlling for climate characteristics like yearly average temperature and precipitations and temperature range, in order to fill a research gap, since not many studies have tried to explain if climate indeed has an effect on suicidal behaviour, and to test an hypothesis that the authors of this paper found to be interesting. 
+The final estimated model we came up with after having expanded the number of observations (from the original 20 to the final 110) and after having dropped statistically insignificant variables showes that, of the climate factors we initially thought about, only average precipitations actually significantly affect standardized suicide rates across Italian provinces. Interestingly, the level of precipitations *negatively* affects suicide rate and not positively, as it is commonly believed. The magnitude of this relation (coefficient = -0,461) is not particularly strong, but the result is statistically significant. A graphical representation of the correlation is depicted below. According to the estimated model, a one percent increase in annual precipitations in one out of the 110 Italian provinces decreases the standard suicide rate of that province by 0,435 percent.
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+
+library(ggplot2)
+
+ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = st_suicide_rate), message = F) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
+```
+
+Moreover, this finding is in line with epidemiology theories that predict higher suicide attempts during Spring and Summer, not during Winter as most of us would tend to think. Studies have shown that especially in Southern Europe suicides are committed more often durign Spring [@worldwide], and it is therefore assumed that the same applies to Italy. 
+
+Regarding the other variables we included in our model, only GDP per capita and population size resulted to be statistically significant. GDP per capita resulted in having a positive impact on suicide rate in Italy, a phenomenon that is not new to specialized studies in this field [@worldwide]. Also population size has a moderate impact on standardized suicide rate. In particular, a one percent increase in population size decreases suicide rate by 0,158 percent.
 
 ## Conclusion:
+
+In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables choosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioural change, which may predispose a person to parasuicidal behaviour [@OECD]. Rain might therefore play a "cooling" effect, preventing this from happening. 
 
 ## References:
 
