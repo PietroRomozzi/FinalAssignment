@@ -1,11 +1,11 @@
 ---
 title: "Explaining suicide in Italian counties"
-
 author: "Pietro Romozzi & Federico Colombo-Ercole"
-
 date: "02 dicembre 2014"
-
-output: ioslides_presentation
+output:
+  ioslides_presentation:
+    css: http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css
+    logo: https://raw.githubusercontent.com/christophergandrud/Hertie_Collab_Data_Science/master/img/HertieCollaborativeDataLogo_v1.png
 
 ---
 
@@ -32,20 +32,44 @@ output: ioslides_presentation
 
 # Methodology
 
-## Case selection:
+## Case selection: {.smaller}
 
-In a previous study we tried our model on regional data not obtaining significant results (only 20 observations).
+Previous study: regional data, 20 observations, unsignificant model.
 
-Italy is still our focus: county-level provides 110 observations!
+Now, Italy is still our focus: *county-level data* provide 110 observations!
 
-## Our Models:
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(ggmap)
+
+location <- "Italy"
+
+qmap(location = "Roma", zoom = 6, maptype = "hybrid")
+
+```
+
+
+## Our Models: 
 
 $$
-LogStSuicideRate = \alpha + \beta_{1}LogGDPPerCapita + \beta_{2}LogUnemploymentRate + \beta_{3}LogPopulation + \beta_{4}LogGiniIndex + \beta_{5}LogAverageTemperature + \beta_{6}LogAverageTemperatureRange + \beta_{7}LogAveragePrecipitations + e
+LogStSuicideRate = \alpha + \beta_{1}LogGDPPerCapita + \beta_{2}LogUnemploymentRate
+$$
+$$
++ \beta_{3}LogPopulation + \beta_{4}LogGiniIndex + \beta_{5}LogAverageTemperature 
+$$
+$$
++ \beta_{6}LogAverageTemperatureRange + \beta_{7}LogAveragePrecipitations + e
 $$
 
+
 $$
-LogSuicideRate = \alpha + \beta_{1} + \beta_{2}LogUnemploymentRate + \beta_{3}LogPopulation + \beta_{4}LogAverageTemperature + \beta_{5}LogAveragePrecipitations + e
+LogSuicideRate = \alpha + \beta_{1} + \beta_{2}LogUnemploymentRate 
+$$
+$$
++ \beta_{3}LogPopulation + \beta_{4}LogAverageTemperature 
+$$
+$$
++ \beta_{5}LogAveragePrecipitations + e
 $$
 
 --------
@@ -87,8 +111,8 @@ LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + l
 stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digits = 3, align = T)
 ```
 
-
 -------
+
 ```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
 library(ggplot2)
 
