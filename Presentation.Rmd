@@ -121,3 +121,22 @@ LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + l
 ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = st_suicide_rate), message = F) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
 ```
 
+-------
+
+## Zelig
+```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
+
+library(Zelig)
+
+CompleteDataset <- na.omit(Dataset)
+
+Z1 <- zelig(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = CompleteDataset, model = "ls")
+
+x.out2 <- setx(Z1, avg_precipitations = 850:900)
+
+simz2 <- sim(Z1, x = x.out2)
+
+plot(simz2)
+
+```
+
