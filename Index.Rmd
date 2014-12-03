@@ -284,7 +284,26 @@ knitr :: kable(Confint, format = "html", digits = 3, caption = "Table of Coeffic
 
 The goal of this research was to test if sucide behaviour are influenced by factors other than socioeconomic indicators like, for example, unemployment rate or GDP per capita. Many researches have already demonstrated that a strong link between suicide rate and the economic and educational condition of individuals exist: overall, studies [@Worldwide] indicate that higher GDP per capita may actually increase suicide rates in certain regions of the world, like Latin American, Caribbean, India, and some countries in South East Asia, while whealth has a negative impact on suicide in most of OECD countries. 
 Apart from this, it was decided to include variables controlling for climate characteristics like yearly average temperature and precipitations and temperature range, in order to fill a research gap, since not many studies have tried to explain if climate indeed has an effect on suicidal behaviour, and to test an hypothesis that the authors of this paper found to be interesting. 
-The final estimated model we came up with after having expanded the number of observations (from the original 20 to the final 110) and after having dropped statistically insignificant variables showes that, of the climate factors we initially thought about, only average precipitations actually significantly affect standardized suicide rates across Italian provinces. Interestingly, the level of precipitations *negatively* affects suicide rate and not positively, as it is commonly believed. The magnitude of this relation (coefficient = -0,461) is not particularly strong, but the result is statistically significant. A graphical representation of the correlation is depicted below. According to the estimated model, a one percent increase in annual precipitations in one out of the 110 Italian provinces decreases the standard suicide rate of that province by 0,435 percent.
+The final estimated model we came up with after having expanded the number of observations (from the original 20 to the final 110) and after having dropped statistically insignificant variables showes that, of the climate factors we initially thought about, only average precipitations actually significantly affect standardized suicide rates across Italian provinces. 
+
+```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
+
+library(Zelig)
+
+CompleteDataset <- na.omit(Dataset)
+
+Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, data = CompleteDataset, model = "ls")
+
+x.out2 <- setx(Z1, avg_precipitations = 650:1200)
+
+simz2 <- sim(Z1, x = x.out2)
+
+plot(simz2, xlab = 'Average precipitations in mm, year 2009', ylab = 'standardized suicide rate', main = 'Standardized suicide rate vs. Average precipitations')
+
+```
+
+
+Interestingly, the level of precipitations *negatively* affects suicide rate and not positively, as it is commonly believed. The magnitude of this relation (coefficient = -0,461) is not particularly strong, but the result is statistically significant. A graphical representation of the correlation is depicted below. According to the estimated model, a one percent increase in annual precipitations in one out of the 110 Italian provinces decreases the standard suicide rate of that province by 0,435 percent.
 
 ```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
 

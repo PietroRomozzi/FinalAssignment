@@ -99,6 +99,8 @@ car :: scatterplotMatrix(Dataset[2:9], main = "Scatterplot Matrix")
 
 # Findings
 
+
+
 -------
 ```{r, echo=FALSE, results='asis', message=FALSE}
 
@@ -108,10 +110,33 @@ LinModel1 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(unemployment_ra
 
 LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = Dataset)
 
-stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digits = 3, align = T)
+labelstable <- c("GDP per capita", "Unemployment rate", "Population", "Gini index", "Average Temperature", "Temperature range", "Average Precipitations")
+
+labelstable2 <- c("Model1", "Model2")
+
+stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digits = 3, align = T, dep.var.labels = "St. suicide rate", covariate.labels = labelstable, clolumn.labels = labelstable2)
 ```
 
--------
+
+##Predicted Probabilities
+```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
+
+library(Zelig)
+
+CompleteDataset <- na.omit(Dataset)
+
+Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, data = CompleteDataset, model = "ls")
+
+x.out2 <- setx(Z1, avg_precipitations = 700:1200)
+
+simz2 <- sim(Z1, x = x.out2)
+
+plot(simz2, xlab = 'Average precipitations in mm, year 2009')
+
+```
+
+---------
+
 
 ```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
 library(ggplot2)
@@ -121,22 +146,11 @@ LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + l
 ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = st_suicide_rate), message = F) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
 ```
 
--------
+##Conclusion
 
-## Zelig
-```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
+-Climate characteristics affect suicide rates in Italy
+-Correlation not as strong as (we) would have expected
+-Rain actually has a negative impact on suicidial behaviour (contrary to what is commonly believed)
 
-library(Zelig)
 
-CompleteDataset <- na.omit(Dataset)
-
-Z1 <- zelig(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = CompleteDataset, model = "ls")
-
-x.out2 <- setx(Z1, avg_precipitations = 850:900)
-
-simz2 <- sim(Z1, x = x.out2)
-
-plot(simz2)
-
-```
 
