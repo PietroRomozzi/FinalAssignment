@@ -11,18 +11,16 @@ output:
 
 # What and Why
 
-## A quick background:
+## A quick background: {.flexbox .vcenter}
 
 - Among young adults (15-29), suicide accounts for 8.5% of all deaths: *second leading cause of death* (after traffic accidents). 
-- Among adults (30-49) suicide accounts for 4.1% of all deaths: *fifth leading cause of death*.
-
-(see the latest "Prevent Suicide" report by WHO)
+- Among adults (30-49) suicide accounts for 4.1% of all deaths: *fifth leading cause of death* (latest "Prevent Suicide" report by WHO).
 
 - "The debate about the impact of climate change on human health has, very recently, included consideration of mental health" (Berry, Bowen & Kjellstrom, 2009).
 
 - The *mental health vs climate* relationship still needs to be studied into details (**research gap**).
 
-## Research question:
+## Research question: {.flexbox .vcenter}
 
 *How do climate factors affect suicide rate in the Italian context?*
 
@@ -49,30 +47,27 @@ qmap(location = "Roma", zoom = 6, maptype = "hybrid")
 ```
 
 
-## Our Models: 
+## Our Model: {.flexbox .vcenter} 
 
 $$
-LogStSuicideRate = \alpha + \beta_{1}LogGDPPerCapita + \beta_{2}LogUnemploymentRate
+StdSuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}Unemployment
 $$
 $$
-+ \beta_{3}LogPopulation + \beta_{4}LogGiniIndex + \beta_{5}LogAverageTemperature 
++ \beta_{3}Population + \beta_{4}GiniIndex + \beta_{5}AverageTemperature 
 $$
 $$
-+ \beta_{6}LogAverageTemperatureRange + \beta_{7}LogAveragePrecipitations + e
-$$
-
-
-$$
-LogSuicideRate = \alpha + \beta_{1} + \beta_{2}LogUnemploymentRate 
-$$
-$$
-+ \beta_{3}LogPopulation + \beta_{4}LogAverageTemperature 
-$$
-$$
-+ \beta_{5}LogAveragePrecipitations + e
++ \beta_{6}AverageTemperatureRange + \beta_{7}AveragePrecipitations + e
 $$
 
---------
+## A Second, improved, model: {.flexbox .vcenter}
+
+$$
+StdSuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}Population
+$$
+$$
++ \beta_{3}AverageTemperature + \beta_{4}AveragePrecipitations + e 
+$$
+
 
 ```{r, echo=FALSE, results='asis'}
 
@@ -91,15 +86,7 @@ Merging1 <- merge(x = main , y = meteo , by = "county", all = T )
 Dataset <- merge(x = Merging1, y = gdp, by = "county", all = T )
 ```
 
-```{r, results='asis', echo=FALSE, message=FALSE}
-require("car")
-
-car :: scatterplotMatrix(Dataset[2:9], main = "Scatterplot Matrix")
-```
-
-# Findings
-
-
+# Results
 
 -------
 ```{r, echo=FALSE, results='asis', message=FALSE}
@@ -117,15 +104,27 @@ labelstable2 <- c("Model1", "Model2")
 stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digits = 3, align = T, dep.var.labels = "St. suicide rate", covariate.labels = labelstable, clolumn.labels = labelstable2)
 ```
 
+## Findings: {.flexbox .vcenter}
 
-##Predicted Probabilities
+- **Average temperatures** and **Temperature range** have no impact on suicide rate across Italy 
+
+- **GDP per capita** has a positive impact on suicides (in Italy).
+
+- **Population size** has a negative impact on suicides.
+
+- **Annual precipitations** has a negative impact on suicides.
+
+
+
+## Predicted Probabilities:
+
 ```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
 
 library(Zelig)
 
 CompleteDataset <- na.omit(Dataset)
 
-Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, data = CompleteDataset, model = "ls")
+Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, cite = F, data = CompleteDataset, model = "ls")
 
 x.out2 <- setx(Z1, avg_precipitations = 700:1200)
 
@@ -137,20 +136,33 @@ plot(simz2, xlab = 'Average precipitations in mm, year 2009')
 
 ---------
 
-
 ```{r,message=FALSE,echo=FALSE,results='asis', warning=FALSE}
 library(ggplot2)
 
 LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = Dataset)
 
-ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = st_suicide_rate), message = F) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
+ggplot2::ggplot(data = Dataset, aes(x = avg_precipitations, y = log(st_suicide_rate), message = F)) + geom_point() + stat_smooth() + theme_bw() + ggtitle("Suicide Rate vs Precipitation in Italy")
 ```
 
-##Conclusion
+## Conclusion: {.flexbox .vcenter}
 
--Climate characteristics affect suicide rates in Italy
--Correlation not as strong as (we) would have expected
--Rain actually has a negative impact on suicidial behaviour (contrary to what is commonly believed)
+- *Climate characteristics do affect suicide rates in Italy.*
 
+- Correlation not as strong as (we) would have expected.
 
+- Rain actually has a negative impact on suicidial behaviour (contrary to what is commonly believed).
 
+- A one percentage increase in average precipitations decreases
+suicide rate by 0,461 percent.
+
+## Limitations and Further Research: {.flexbox .vcenter}
+
+- Data: only 2009. Panel data analysis?
+
+- Further applications to test whether precipitations and sucide rates are negatively correlated also in other developed countries.
+
+- Test other climatic factors (e.g. solar radiation)?
+
+- Test it with monthly data looking for seasonal patterns for suicide.
+
+# Thank you for your attention! {.flexbox .vcenter}

@@ -292,7 +292,7 @@ library(Zelig)
 
 CompleteDataset <- na.omit(Dataset)
 
-Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, data = CompleteDataset, model = "ls")
+Z1 <- zelig (st_suicide_rate ~ gdp_per_capita + log(population) + avg_temperature + avg_precipitations, cite = F, data = CompleteDataset, model = "ls")
 
 x.out2 <- setx(Z1, avg_precipitations = 650:1200)
 
@@ -318,11 +318,11 @@ Regarding the other variables we included in our model, only GDP per capita and 
 
 ## Conclusion:
 
-<<<<<<< Updated upstream
-In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables choosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioural change, which may predispose a person to parasuicidal behaviour [@OECD]. Rain might therefore play a "cooling" effect, preventing this from happening. 
-=======
-In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables choosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioural change, which may predispose a person to parasuicidal behaviour [@AGlance2013]. Rain might therefore play a "cooling" effect, preventing this from happening.
->>>>>>> Stashed changes
+In conclusion, climate factors do not have such a great impact on standardized suicide rates in Italian provinces in year 2009. Among the variables chosen to estimate the model, only annual average precipitation seems to influence suicide rate. The reason for this is that most of suicides take place in Spring and Summer, when heat and humidity affect body cooling, thus causing psychological and behavioral change, which may predispose a person to para suicidal behavior [@AGlance2013]. 
+Interestingly, rain negatively affects suicide rates in Italian provinces instead of being positively correlated to suicidal behaviors, as it is commonly believed. This result is confirmed by other studies regarding this topic. In particular, researchers agree that suicides are not correlated to particularly bad weather conditions, since they rather occur during Spring and Summer months. 
+
+Overall, model's results were confirmed by psychiatric theories and evidence gathered during researches in OECD member countries. However, to get more precise and interesting results, the same research question could be applied to other developed countries, to test if the relationships between precipitations and suicide rate hold true only in the Italian context or if they also hold true elsewhere; moreover, the analysis could be extended including data of years other than 2009. In fact, this was the first year when most of OECD countries, including Italy, experienced the most severe recession since World War Two, therefore data regarding suicide rates might be biased. 
+
 
 ## References:
 
