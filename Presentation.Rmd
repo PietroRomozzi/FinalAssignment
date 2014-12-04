@@ -88,21 +88,19 @@ Dataset <- merge(x = Merging1, y = gdp, by = "county", all = T )
 
 # Results
 
--------
-```{r, echo=FALSE, results='asis', message=FALSE}
+## Models Comparison: {.flexbox .vcenter}
 
-library(stargazer)
 
-LinModel1 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(unemployment_rate) + log(population) + log(gini_index) + log(avg_temperature) + log(avg_temp_range) + log(avg_precipitations), data = Dataset)
+First Model           | Second Model          |
+--------------------- | ----------------------|
+GDP per capita***     | GDP per capita***     |
+Unemployment Rate     | *dropped*             |
+Population***         | Population***         |
+Gini index            | *dropped*             |
+Avg Temperature       | Avg Temperature       |
+Avg Temp. Range       | *dropped*             |
+Avg Precipitations*** | Avg Precipitations*** |
 
-LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + log(avg_temperature) + log(avg_precipitations), data = Dataset)
-
-labelstable <- c("GDP per capita", "Unemployment rate", "Population", "Gini index", "Average Temperature", "Temperature range", "Average Precipitations")
-
-labelstable2 <- c("Model1", "Model2")
-
-stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digits = 3, align = T, dep.var.labels = "St. suicide rate", covariate.labels = labelstable, clolumn.labels = labelstable2)
-```
 
 ## Findings: {.flexbox .vcenter}
 
@@ -113,7 +111,6 @@ stargazer(LinModel1, LinModel2, title = "Models Comparison", type = "html", digi
 - **Population size** has a negative impact on suicides.
 
 - **Annual precipitations** has a negative impact on suicides.
-
 
 
 ## Predicted Probabilities:
