@@ -159,7 +159,7 @@ library(stargazer)
 
 labelsdescriptive <- c("Unemployment rate", "Population", "Gini Index", "St. suicide rate", "Average precipitations", "Average Temperatures", "Average Temperature Range", "GDP per capita")
 
-stargazer(Dataset, summary = T, title = "Data Description", digits = 2, type = "latex", covariate.labels = labelsdescriptive, header = F)
+stargazer(Dataset, summary = T, title = "Data Description", digits = 2, type = "latex", covariate.labels = labelsdescriptive, header = FALSE)
 
 
 ```
@@ -232,7 +232,7 @@ LinModel2 <- lm(log(st_suicide_rate) ~ log(gdp_per_capita) + log(population) + l
 
 labelsmodel2 <- c("GDP per capita", "Population", "Average Temperatures", "Average Precipitations")
 
-stargazer(LinModel2, title = "Estimation of the Second Model", digits = 3, covariate.labels = labelsmodel2, dep.var.labels = "St. suicide rate", type = "latex")
+stargazer(LinModel2, title = "Estimation of the Second Model", digits = 3, covariate.labels = labelsmodel2, dep.var.labels = "St. suicide rate", type = "latex", header = FALSE)
 
 ```
 
