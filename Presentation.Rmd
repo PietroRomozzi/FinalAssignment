@@ -50,7 +50,11 @@ qmap(location = "Roma", zoom = 6, maptype = "hybrid")
 ## Our Model: {.flexbox .vcenter} 
 
 $$
+<<<<<<< Updated upstream
 StdSuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}Unemployment
+=======
+SuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}UnemploymentRate
+>>>>>>> Stashed changes
 $$
 $$
 + \beta_{3}Population + \beta_{4}GiniIndex + \beta_{5}AverageTemperature 
@@ -61,13 +65,28 @@ $$
 
 ## A Second, improved, model: {.flexbox .vcenter}
 
+
 $$
+<<<<<<< Updated upstream
 StdSuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}Population
 $$
 $$
 + \beta_{3}AverageTemperature + \beta_{4}AveragePrecipitations + e 
 $$
 
+=======
+SuicideRate = \alpha + \beta_{1}GdpPerCapita + \beta_{2}UnemploymentRate 
+$$
+$$
++ \beta_{3}AveragePrecipitations + \beta_{4}AverageTemperature 
+$$
+$$
++ \beta_{5}Population + e
+$$
+
+
+--------
+>>>>>>> Stashed changes
 
 ```{r, echo=FALSE, results='asis'}
 
